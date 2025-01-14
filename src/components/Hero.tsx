@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 bg-gradient-to-b from-primary-gold-light to-white">
+    <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 bg-gradient-to-b from-primary-gold-light to-white mt-8">
       <div className="max-w-4xl mx-auto text-center space-y-8 animate-fadeIn">
         <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground">
           Faith at Your Fingertips
