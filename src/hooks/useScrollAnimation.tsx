@@ -8,7 +8,13 @@ export const useScrollAnimation = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // Element is entering viewport
             entry.target.classList.add('animate-scrollReveal');
+            entry.target.classList.remove('animate-scrollHide');
+          } else {
+            // Element is leaving viewport
+            entry.target.classList.remove('animate-scrollReveal');
+            entry.target.classList.add('animate-scrollHide');
           }
         });
       },
