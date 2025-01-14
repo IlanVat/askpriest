@@ -14,7 +14,7 @@ export const CTA = () => {
           Start with 10 free questions. No credit card required.
         </p>
         <Button size="lg" className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 text-white">
-          Find Biblical Answers Now
+          Begin your spiritual journey now
         </Button>
       </div>
     </section>
