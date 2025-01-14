@@ -35,7 +35,7 @@ const FAQ = () => {
     },
     {
       question: "How many questions can I ask for free?",
-      answer: "With our free plan, you get 10 questions per month. Once you've used your monthly allocation, you can upgrade to a subscription plan that suits your needs for unlimited access.",
+      answer: "With our free plan, you get 5 questions per month. Once you've used your monthly allocation, you can upgrade to a subscription plan that suits your needs for unlimited access.",
       icon: Info,
     },
     {
