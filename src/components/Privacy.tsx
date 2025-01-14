@@ -3,7 +3,7 @@ import { Lock, Heart, Shield } from "lucide-react";
 
 export const Privacy = () => {
   return (
-    <section className="py-20 bg-white opacity-0 animate-scrollReveal">
+    <section className="py-20 bg-white animate-scrollReveal">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif text-center mb-8">Your Privacy Matters to Us</h2>
@@ -30,7 +30,7 @@ export const Privacy = () => {
             ].map((item, index) => (
               <Card 
                 key={item.title} 
-                className="p-6 text-center opacity-0 animate-scrollReveal"
+                className="p-6 text-center animate-scrollReveal"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <item.icon className="h-8 w-8 text-primary-gold-dark mx-auto mb-4" />

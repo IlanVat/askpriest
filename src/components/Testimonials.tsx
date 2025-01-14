@@ -21,7 +21,7 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-20 bg-primary-gold-light opacity-0 animate-scrollReveal">
+    <section className="py-20 bg-primary-gold-light animate-scrollReveal">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
           What Our Community Says
@@ -30,7 +30,7 @@ export const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={testimonial.author} 
-              className="p-6 bg-white opacity-0 animate-scrollReveal"
+              className="p-6 bg-white animate-scrollReveal"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <MessageSquare className="h-8 w-8 text-primary-gold-dark mb-4" />
