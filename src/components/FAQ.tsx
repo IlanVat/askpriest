@@ -39,11 +39,6 @@ const FAQ = () => {
       icon: MessageSquare,
     },
     {
-      question: "How many questions can I ask for free?",
-      answer: "With our free plan, you get 5 questions per month. Once you've used your monthly allocation, you can upgrade to a subscription plan that suits your needs for unlimited access.",
-      icon: Info,
-    },
-    {
       question: "Is AskPriest a replacement for a real priest or pastor?",
       answer: "No, AskPriest is not a replacement for real-life clergy or church community. It is a tool designed to provide faith-based guidance and support for those seeking answers in their spiritual journey.",
       icon: HelpCircle,
