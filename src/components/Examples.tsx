@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const examples = [
   {
@@ -24,8 +25,10 @@ const examples = [
 ];
 
 export const Examples = () => {
+  const sectionRef = useScrollAnimation();
+
   return (
-    <section className="py-20 animate-scrollReveal">
+    <section ref={sectionRef} className="py-20 opacity-0">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
           Example Questions
@@ -36,7 +39,7 @@ export const Examples = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="animate-scrollReveal"
+                className="opacity-0 animate-scrollReveal"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <AccordionTrigger className="text-lg font-serif">
