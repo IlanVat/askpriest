@@ -11,10 +11,10 @@ export const CTA = () => {
           Join thousands of believers finding guidance, understanding, and spiritual growth through AskPriest.
         </p>
         <p className="text-lg mb-8 max-w-2xl mx-auto font-semibold">
-          Start with 10 free questions. No credit card required.
+          Start with 5 free questions. No credit card required.
         </p>
         <Button size="lg" className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 text-white">
-          Start Asking For Free
+          Start for Free. No Commitment Needed.
         </Button>
       </div>
     </section>

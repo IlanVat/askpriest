@@ -1,6 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { MessageSquare } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -18,6 +25,16 @@ const testimonials = [
     author: "David L.",
     role: "Bible Study Participant",
   },
+  {
+    quote: "As a new Christian, AskPriest has been an invaluable resource for learning.",
+    author: "Emma K.",
+    role: "New Believer",
+  },
+  {
+    quote: "The spiritual guidance provided has strengthened my daily walk with God.",
+    author: "James P.",
+    role: "Church Elder",
+  }
 ];
 
 export const Testimonials = () => {
@@ -29,22 +46,30 @@ export const Testimonials = () => {
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
           What Our Community Says
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card 
-              key={testimonial.author} 
-              className="p-6 bg-white opacity-0 animate-scrollReveal"
-              style={{ animationDelay: `${index * 200}ms` }}
-            >
-              <MessageSquare className="h-8 w-8 text-primary-gold-dark mb-4" />
-              <p className="text-lg font-serif italic mb-4">{testimonial.quote}</p>
-              <div className="text-sm text-foreground/60">
-                <p className="font-semibold">{testimonial.author}</p>
-                <p>{testimonial.role}</p>
-              </div>
-            </Card>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-5xl mx-auto"
+        >
+          <CarouselContent>
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <Card className="p-6 bg-white h-full">
+                  <MessageSquare className="h-8 w-8 text-primary-gold-dark mb-4" />
+                  <p className="text-lg font-serif italic mb-4">{testimonial.quote}</p>
+                  <div className="text-sm text-foreground/60">
+                    <p className="font-semibold">{testimonial.author}</p>
+                    <p>{testimonial.role}</p>
+                  </div>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </section>
   );

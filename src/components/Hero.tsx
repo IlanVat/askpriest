@@ -19,7 +19,7 @@ export const Hero = () => {
         </p>
         <div className="flex justify-center pt-4">
           <Button size="lg" className="bg-primary-gold-dark hover:bg-primary-gold text-white">
-            Ask Your First Question Now
+            Start Your Faith Journey for Free
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>

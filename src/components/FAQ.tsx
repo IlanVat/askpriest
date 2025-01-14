@@ -10,17 +10,22 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is AskPriest?",
-      answer: "AskPriest is an AI-powered virtual priest designed to provide compassionate, scripture-based answers to your faith-related questions. Whether you're seeking guidance on life decisions, biblical understanding, or spiritual growth, AskPriest is here to help you navigate your faith journey.",
+      answer: "AskPriest is an AI-powered virtual priest designed to provide compassionate, scripture-based answers to your faith-related questions. As your Christian advice online companion, whether you're seeking Bible questions answered, guidance on life decisions, biblical understanding, or spiritual growth, AskPriest is here to help you navigate your faith journey with faith-based AI guidance.",
       icon: HelpCircle,
     },
     {
       question: "How does AskPriest work?",
-      answer: "AskPriest uses advanced AI trained on biblical texts, church teachings, and theological insights to provide thoughtful, personalized responses. Simply type your question, and AskPriest will offer an answer rooted in Christian values and scripture.",
+      answer: "AskPriest uses advanced AI trained on biblical texts, church teachings, and theological insights to provide thoughtful, personalized responses. As your virtual priest companion, simply type your question, and AskPriest will offer an answer rooted in Christian values and scripture, providing reliable Christian advice online.",
+      icon: Info,
+    },
+    {
+      question: "How many questions can I ask for free?",
+      answer: "New users can ask up to 5 questions per month for free. There's no credit card required and no commitment needed.",
       icon: Info,
     },
     {
       question: "Is AskPriest affiliated with a specific denomination?",
-      answer: "No, AskPriest is non-denominational. It draws from core Christian teachings shared across many traditions, including Protestant, Catholic, and Orthodox churches. The responses aim to be respectful of all Christian denominations.",
+      answer: "No, AskPriest is non-denominational. Our virtual priest service draws from core Christian teachings shared across many traditions, including Protestant, Catholic, and Orthodox churches. The responses aim to be respectful of all Christian denominations while providing Bible questions answered accurately.",
       icon: MessageSquare,
     },
     {
@@ -58,7 +63,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600">
-            Find answers to common questions about AskPriest
+            Find answers to common questions about AskPriest - Your Virtual Christian Guide
           </p>
         </div>
         
