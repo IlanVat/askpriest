@@ -33,7 +33,7 @@ export const Privacy = () => {
             ].map((item, index) => (
               <Card 
                 key={item.title} 
-                className="p-6 text-center opacity-0 animate-scrollReveal"
+                className="p-6 text-center opacity-0"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <item.icon className="h-8 w-8 text-primary-gold-dark mx-auto mb-4" />
