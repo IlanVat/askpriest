@@ -1,11 +1,26 @@
-import { Card } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const examples = [
-  "How do I know God's purpose for my life?",
-  "Why is the resurrection of Jesus central to the Christian faith?",
-  "How do I prepare my heart for communion?",
-  "What are some Bible verses to inspire hope and faith?",
-  "What does the Bible say about dealing with anxiety and fear?",
+  {
+    question: "What does the Bible say about marriage and relationships?",
+    description: "Explore biblical principles for building strong, faithful relationships."
+  },
+  {
+    question: "How do I forgive someone who hurt me deeply?",
+    description: "Find guidance on the Christian path to forgiveness and healing."
+  },
+  {
+    question: "What is the Christian view on modern issues like mental health?",
+    description: "Understand how faith and modern mental health perspectives work together."
+  },
+  {
+    question: "How can I strengthen my prayer life?",
+    description: "Discover practical ways to deepen your connection with God through prayer."
+  },
+  {
+    question: "What does the Bible teach about finding purpose in life?",
+    description: "Learn about God's plan for your life and how to discover your calling."
+  },
 ];
 
 export const Examples = () => {
@@ -15,12 +30,19 @@ export const Examples = () => {
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
           Example Questions
         </h2>
-        <div className="max-w-2xl mx-auto space-y-4">
-          {examples.map((example) => (
-            <Card key={example} className="p-4 hover:bg-primary/5 cursor-pointer transition-colors">
-              <p className="text-lg font-serif">{example}</p>
-            </Card>
-          ))}
+        <div className="max-w-2xl mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            {examples.map((example, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-lg font-serif">
+                  {example.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-foreground/70">
+                  {example.description}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

@@ -15,15 +15,12 @@ export const Hero = () => {
           Seek Guidance. Find Peace. Strengthen Your Faith.
         </p>
         <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-          Experience 24/7 spiritual guidance powered by AI, offering biblical wisdom and compassionate answers to your faith questions.
+          Experience 24/7 spiritual guidance powered by the most advanced AI, offering biblical wisdom and compassionate answers to your faith questions.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+        <div className="flex justify-center pt-4">
           <Button size="lg" className="bg-primary-gold-dark hover:bg-primary-gold text-white">
             Ask Your First Question Now
             <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button size="lg" variant="outline" className="border-primary-gold hover:bg-primary-gold/10">
-            Learn More
           </Button>
         </div>
       </div>
