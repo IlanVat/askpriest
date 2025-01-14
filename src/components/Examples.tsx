@@ -25,7 +25,7 @@ const examples = [
 
 export const Examples = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 opacity-0 animate-scrollReveal">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
           Example Questions
@@ -33,7 +33,12 @@ export const Examples = () => {
         <div className="max-w-2xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {examples.map((example, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="opacity-0 animate-scrollReveal"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
                 <AccordionTrigger className="text-lg font-serif">
                   {example.question}
                 </AccordionTrigger>

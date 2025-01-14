@@ -20,7 +20,7 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white opacity-0 animate-scrollReveal">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
           How AskPriest Works
@@ -29,7 +29,8 @@ export const HowItWorks = () => {
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="flex flex-col items-center text-center p-6"
+              className="flex flex-col items-center text-center p-6 opacity-0 animate-scrollReveal"
+              style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="w-16 h-16 rounded-full bg-primary-gold flex items-center justify-center mb-6">
                 <step.icon className="h-8 w-8 text-primary-gold-dark" />
