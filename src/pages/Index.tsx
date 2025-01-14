@@ -5,7 +5,7 @@ import { CTA } from "@/components/CTA";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Testimonials } from "@/components/Testimonials";
 import { Privacy } from "@/components/Privacy";
-import { FAQ } from "@/components/FAQ";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   return (
