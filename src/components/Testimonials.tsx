@@ -8,6 +8,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
   {
@@ -40,6 +43,8 @@ const testimonials = [
 export const Testimonials = () => {
   const sectionRef = useScrollAnimation();
 
+  const autoplayPlugin = Autoplay({ delay: 4000, stopOnInteraction: false });
+
   return (
     <section ref={sectionRef} className="py-20 bg-primary-gold-light opacity-0">
       <div className="container">
@@ -51,6 +56,7 @@ export const Testimonials = () => {
             align: "start",
             loop: true,
           }}
+          plugins={[autoplayPlugin]}
           className="w-full max-w-5xl mx-auto"
         >
           <CarouselContent>
