@@ -9,7 +9,7 @@ const steps = [
   {
     icon: BookOpen,
     title: "Get Biblical Wisdom",
-    description: "Receive a personalized answer rooted in scripture",
+    description: "Receive a personalized answer rooted in scripture within seconds",
   },
   {
     icon: Heart,
