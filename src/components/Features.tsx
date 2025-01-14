@@ -32,7 +32,7 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow opacity-0"
+              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow opacity-0 animate-scrollReveal"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <feature.icon className="h-12 w-12 text-primary-gold-dark mb-4" />

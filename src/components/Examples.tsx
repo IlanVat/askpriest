@@ -39,7 +39,7 @@ export const Examples = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="opacity-0"
+                className="opacity-0 animate-scrollReveal"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <AccordionTrigger className="text-lg font-serif">

@@ -32,7 +32,7 @@ export const HowItWorks = () => {
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="flex flex-col items-center text-center p-6 opacity-0"
+              className="flex flex-col items-center text-center p-6 opacity-0 animate-scrollReveal"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="w-16 h-16 rounded-full bg-primary-gold flex items-center justify-center mb-6">

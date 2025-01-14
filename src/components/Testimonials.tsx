@@ -33,7 +33,7 @@ export const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={testimonial.author} 
-              className="p-6 bg-white opacity-0"
+              className="p-6 bg-white opacity-0 animate-scrollReveal"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <MessageSquare className="h-8 w-8 text-primary-gold-dark mb-4" />
