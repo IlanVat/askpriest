@@ -35,7 +35,7 @@ const FAQ = () => {
     },
     {
       question: "How many questions can I ask for free?",
-      answer: "New users can ask up to 10 questions for free as part of the trial. After that, you can choose a subscription plan that suits your needs.",
+      answer: "With our free plan, you get 10 questions per month. Once you've used your monthly allocation, you can upgrade to a subscription plan that suits your needs for unlimited access.",
       icon: Info,
     },
     {
