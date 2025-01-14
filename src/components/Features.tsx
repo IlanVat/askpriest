@@ -20,7 +20,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <section className="py-20 bg-secondary">
+    <section className="py-20 bg-primary-gold-light">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">
           Why Choose AskPriest?
@@ -31,7 +31,7 @@ export const Features = () => {
               key={feature.title}
               className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
-              <feature.icon className="h-12 w-12 text-primary-gold mb-4" />
+              <feature.icon className="h-12 w-12 text-primary-gold-dark mb-4" />
               <h3 className="text-xl font-serif mb-2">{feature.title}</h3>
               <p className="text-foreground/60">{feature.description}</p>
             </div>

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 bg-gradient-to-b from-primary to-white">
+    <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 bg-gradient-to-b from-primary-gold-light to-white">
       <div className="max-w-4xl mx-auto text-center space-y-8 animate-fadeIn">
         <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground">
           Faith at Your Fingertips
@@ -15,11 +15,11 @@ export const Hero = () => {
           Experience 24/7 spiritual guidance powered by AI, offering biblical wisdom and compassionate answers to your faith questions.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-          <Button size="lg" className="bg-primary-gold hover:bg-primary-gold/90 text-foreground">
+          <Button size="lg" className="bg-primary-gold-dark hover:bg-primary-gold text-white">
             Start Your Faith Journey
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button size="lg" variant="outline">
+          <Button size="lg" variant="outline" className="border-primary-gold hover:bg-primary-gold/10">
             Learn More
           </Button>
         </div>

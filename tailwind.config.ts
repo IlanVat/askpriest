@@ -25,12 +25,14 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#D3E4FD",
+          DEFAULT: "#F5DEB3", // Changed to wheat gold
           foreground: "#1E293B",
-          gold: "#F5DEB3",
+          gold: "#F5DEB3", // Wheat gold
+          "gold-light": "#FFF8DC", // Cornsilk
+          "gold-dark": "#DAA520", // Goldenrod
         },
         secondary: {
-          DEFAULT: "#F1F0FB",
+          DEFAULT: "#FFF8DC", // Changed to light gold
           foreground: "#1E293B",
         },
       },
