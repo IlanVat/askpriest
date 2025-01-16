@@ -47,8 +47,8 @@ export const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="mt-12 w-full max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-        <div className="aspect-w-16 aspect-h-9 relative">
+      <div className="mt-12 w-full max-w-xl mx-auto">
+        <div className="relative w-full aspect-video bg-white rounded-md shadow-sm overflow-hidden">
           <blockquote 
             className="imgur-embed-pub" 
             lang="en" 
