@@ -3,6 +3,13 @@ import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
+// Add type declaration for the window object
+declare global {
+  interface Window {
+    imgurEmbed?: any;
+  }
+}
+
 export const Hero = () => {
   const navigate = useNavigate();
 
@@ -52,10 +59,6 @@ export const Hero = () => {
       
       script.onload = () => {
         console.log('Imgur script loaded successfully');
-        if (window.imgurEmbed) {
-          window.imgurEmbed.createIframe();
-          console.log('Imgur embed initialized');
-        }
       };
 
       script.onerror = () => {
