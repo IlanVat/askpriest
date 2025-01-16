@@ -11,23 +11,51 @@ export const Hero = () => {
   };
 
   useEffect(() => {
-    // Remove any existing script to prevent duplicates
-    const existingScript = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
-    if (existingScript) {
-      document.body.removeChild(existingScript);
-    }
+    const loadImgur = () => {
+      // Remove any existing script and blockquote
+      const existingScript = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
 
-    // Add the script again
-    const script = document.createElement('script');
-    script.src = '//s.imgur.com/min/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
+      const existingBlockquote = document.querySelector('.imgur-embed-pub');
+      if (existingBlockquote) {
+        existingBlockquote.remove();
+      }
 
+      // Create new blockquote
+      const blockquote = document.createElement('blockquote');
+      blockquote.className = 'imgur-embed-pub';
+      blockquote.setAttribute('lang', 'en');
+      blockquote.setAttribute('data-id', 'a/X4ctIoj');
+      blockquote.setAttribute('data-context', 'false');
+      
+      const link = document.createElement('a');
+      link.href = '//imgur.com/a/X4ctIoj';
+      link.textContent = 'Demo';
+      blockquote.appendChild(link);
+
+      // Add blockquote to container
+      const container = document.querySelector('#imgur-container');
+      if (container) {
+        container.appendChild(blockquote);
+      }
+
+      // Add script
+      const script = document.createElement('script');
+      script.src = '//s.imgur.com/min/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    };
+
+    // Initial load
+    loadImgur();
+
+    // Cleanup
     return () => {
-      // Cleanup on component unmount
-      const scriptToRemove = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
-      if (scriptToRemove) {
-        document.body.removeChild(scriptToRemove);
+      const script = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
+      if (script) {
+        script.remove();
       }
     };
   }, []);
@@ -59,15 +87,8 @@ export const Hero = () => {
         </div>
       </div>
       <div className="mt-12 w-full max-w-full overflow-hidden px-4">
-        <div className="relative w-full max-w-[600px] mx-auto">
-          <blockquote 
-            className="imgur-embed-pub w-full" 
-            lang="en" 
-            data-id="a/X4ctIoj"
-            data-context="false"
-          >
-            <a href="//imgur.com/a/X4ctIoj">Demo</a>
-          </blockquote>
+        <div id="imgur-container" className="relative w-full max-w-[600px] mx-auto">
+          {/* Imgur embed will be inserted here dynamically */}
         </div>
       </div>
     </section>
