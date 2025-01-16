@@ -49,7 +49,7 @@ export const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="mt-12 w-full max-w-sm mx-auto overflow-hidden">
+      <div className="mt-12 w-full max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
         <div className="aspect-w-16 aspect-h-9 relative">
           <blockquote 
             className="imgur-embed-pub" 
