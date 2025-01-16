@@ -6,7 +6,7 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    window.open('https://askpriestai.com', '_blank');
+    window.open('https://www.askpriestai.com', '_blank');
   };
 
   return (
