@@ -47,17 +47,15 @@ export const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="mt-12 w-full max-w-xl mx-auto">
-        <div className="relative w-full aspect-video bg-white rounded-md shadow-sm overflow-hidden">
-          <blockquote 
-            className="imgur-embed-pub" 
-            lang="en" 
-            data-id="a/X4ctIoj"
-            data-context="false"
-          >
-            <a href="//imgur.com/a/X4ctIoj">Demo</a>
-          </blockquote>
-        </div>
+      <div className="mt-12">
+        <blockquote 
+          className="imgur-embed-pub" 
+          lang="en" 
+          data-id="a/X4ctIoj"
+          data-context="false"
+        >
+          <a href="//imgur.com/a/X4ctIoj">Demo</a>
+        </blockquote>
       </div>
     </section>
   );
