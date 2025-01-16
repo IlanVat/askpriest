@@ -11,13 +11,24 @@ export const Hero = () => {
   };
 
   useEffect(() => {
+    // Remove any existing script to prevent duplicates
+    const existingScript = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
+    if (existingScript) {
+      document.body.removeChild(existingScript);
+    }
+
+    // Add the script again
     const script = document.createElement('script');
     script.src = '//s.imgur.com/min/embed.js';
     script.async = true;
     document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      // Cleanup on component unmount
+      const scriptToRemove = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
+      if (scriptToRemove) {
+        document.body.removeChild(scriptToRemove);
+      }
     };
   }, []);
 
