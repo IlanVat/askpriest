@@ -18,7 +18,11 @@ export const Hero = () => {
           Experience 24/7 spiritual guidance powered by the most advanced AI, offering biblical wisdom and compassionate answers to your faith questions.
         </p>
         <div className="flex justify-center pt-4">
-          <Button size="lg" className="bg-primary-gold-dark hover:bg-primary-gold text-white">
+          <Button 
+            size="lg" 
+            className="bg-primary-gold-dark hover:bg-primary-gold text-white"
+            onClick={() => window.location.href = 'https://askpriestai.com'}
+          >
             Start Your Faith Journey for Free
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
