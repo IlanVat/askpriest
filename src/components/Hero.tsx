@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export const Hero = () => {
   const navigate = useNavigate();
@@ -8,6 +9,19 @@ export const Hero = () => {
   const handleClick = () => {
     window.open('https://www.askpriestai.com', '_blank');
   };
+
+  useEffect(() => {
+    // Load Imgur embed script
+    const script = document.createElement('script');
+    script.src = '//s.imgur.com/min/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 bg-gradient-to-b from-primary-gold-light via-primary-gold-light to-white">
@@ -36,11 +50,13 @@ export const Hero = () => {
         </div>
       </div>
       <div className="mt-12 w-full max-w-sm mx-auto bg-white rounded-lg shadow-xl p-6 animate-fadeIn">
-        <img 
-          src="https://i.imgur.com/X4ctIoj.gif" 
-          alt="AskPriest Interface Preview" 
-          className="w-full rounded-lg"
-        />
+        <blockquote 
+          className="imgur-embed-pub" 
+          lang="en" 
+          data-id="a/X4ctIoj"
+        >
+          <a href="//imgur.com/a/X4ctIoj">Demo</a>
+        </blockquote>
       </div>
     </section>
   );
