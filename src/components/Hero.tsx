@@ -37,7 +37,7 @@ export const Hero = () => {
       </div>
       <div className="mt-12 w-full max-w-sm mx-auto bg-white rounded-lg shadow-xl p-6 animate-fadeIn">
         <img 
-          src="https://i.imgur.com/iPq0pQq.gif" 
+          src="https://i.imgur.com/X4ctIoj.gif" 
           alt="AskPriest Interface Preview" 
           className="w-full rounded-lg"
         />
