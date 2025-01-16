@@ -11,8 +11,11 @@ export const Hero = () => {
   };
 
   useEffect(() => {
-    const loadImgur = () => {
-      // Remove any existing script and blockquote
+    let retryCount = 0;
+    const maxRetries = 3;
+
+    const initializeImgur = () => {
+      // Clean up any existing elements
       const existingScript = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
       if (existingScript) {
         existingScript.remove();
@@ -23,7 +26,7 @@ export const Hero = () => {
         existingBlockquote.remove();
       }
 
-      // Create new blockquote
+      // Create new elements
       const blockquote = document.createElement('blockquote');
       blockquote.className = 'imgur-embed-pub';
       blockquote.setAttribute('lang', 'en');
@@ -38,24 +41,47 @@ export const Hero = () => {
       // Add blockquote to container
       const container = document.querySelector('#imgur-container');
       if (container) {
+        container.innerHTML = ''; // Clear container
         container.appendChild(blockquote);
       }
 
-      // Add script
+      // Add script with load event handler
       const script = document.createElement('script');
       script.src = '//s.imgur.com/min/embed.js';
       script.async = true;
+      
+      script.onload = () => {
+        console.log('Imgur script loaded successfully');
+        if (window.imgurEmbed) {
+          window.imgurEmbed.createIframe();
+          console.log('Imgur embed initialized');
+        }
+      };
+
+      script.onerror = () => {
+        console.error('Failed to load Imgur script');
+        if (retryCount < maxRetries) {
+          retryCount++;
+          console.log(`Retrying... Attempt ${retryCount} of ${maxRetries}`);
+          setTimeout(initializeImgur, 1000); // Retry after 1 second
+        }
+      };
+
       document.body.appendChild(script);
     };
 
-    // Initial load
-    loadImgur();
+    // Initial load with a slight delay to ensure DOM is ready
+    setTimeout(initializeImgur, 100);
 
     // Cleanup
     return () => {
       const script = document.querySelector('script[src="//s.imgur.com/min/embed.js"]');
       if (script) {
         script.remove();
+      }
+      const container = document.querySelector('#imgur-container');
+      if (container) {
+        container.innerHTML = '';
       }
     };
   }, []);
