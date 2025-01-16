@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export const CTA = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    window.open('https://askpriestai.com', '_blank');
+  };
+
   return (
     <section className="py-20 bg-primary-gold">
       <div className="container text-center">
@@ -16,7 +23,7 @@ export const CTA = () => {
         <Button 
           size="lg" 
           className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 text-white"
-          onClick={() => window.location.href = 'https://askpriestai.com'}
+          onClick={handleClick}
         >
           Start for Free. No Commitment Needed.
         </Button>

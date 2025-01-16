@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    window.open('https://askpriestai.com', '_blank');
+  };
+
   return (
     <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 bg-gradient-to-b from-primary-gold-light via-primary-gold-light to-white">
       <div className="max-w-4xl mx-auto text-center space-y-8 animate-fadeIn mt-8">
@@ -21,7 +28,7 @@ export const Hero = () => {
           <Button 
             size="lg" 
             className="bg-primary-gold-dark hover:bg-primary-gold text-white"
-            onClick={() => window.location.href = 'https://askpriestai.com'}
+            onClick={handleClick}
           >
             Start Your Faith Journey for Free
             <ArrowRight className="ml-2 h-4 w-4" />
