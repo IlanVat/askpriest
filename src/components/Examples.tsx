@@ -15,6 +15,10 @@ const examples = [
     description: "Understand how faith and modern mental health perspectives work together."
   },
   {
+    question: "Explain John 3:16 from a Catholic perspective",
+    description: "Get insights into this foundational verse about God's love and salvation through Catholic theological understanding."
+  },
+  {
     question: "How can I strengthen my prayer life?",
     description: "Discover practical ways to deepen your connection with God through prayer."
   },
