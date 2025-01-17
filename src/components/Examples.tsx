@@ -3,6 +3,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const examples = [
   {
+    question: "Explain John 3:16 from a Catholic perspective",
+    description: "Get insights into this foundational verse about God's love and salvation through Catholic theological understanding."
+  },
+  {
     question: "What does the Bible say about marriage and relationships?",
     description: "Explore biblical principles for building strong, faithful relationships."
   },
@@ -13,10 +17,6 @@ const examples = [
   {
     question: "What is the Christian view on modern issues like mental health?",
     description: "Understand how faith and modern mental health perspectives work together."
-  },
-  {
-    question: "Explain John 3:16 from a Catholic perspective",
-    description: "Get insights into this foundational verse about God's love and salvation through Catholic theological understanding."
   },
   {
     question: "How can I strengthen my prayer life?",
