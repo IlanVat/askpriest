@@ -13,8 +13,8 @@ const Index = () => {
       <Hero />
       <HowItWorks />
       <Features />
-      <Privacy />
       <Examples />
+      <Privacy />
       <FAQ />
       <Testimonials />
       <CTA />
