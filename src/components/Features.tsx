@@ -1,5 +1,6 @@
 import { Book, Clock, MessageSquare } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
@@ -21,6 +22,10 @@ const features = [
 
 export const Features = () => {
   const sectionRef = useScrollAnimation();
+  
+  const handleClick = () => {
+    window.open('https://www.askpriestai.com', '_blank');
+  };
 
   return (
     <section ref={sectionRef} className="py-20 bg-primary-gold-light opacity-0">
@@ -40,6 +45,15 @@ export const Features = () => {
               <p className="text-foreground/60">{feature.description}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Button 
+            size="lg" 
+            className="bg-primary-gold-dark hover:bg-primary-gold text-white"
+            onClick={handleClick}
+          >
+            Find Your Answers Now
+          </Button>
         </div>
       </div>
     </section>
