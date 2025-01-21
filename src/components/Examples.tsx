@@ -1,10 +1,11 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Button } from "@/components/ui/button";
 
 const examples = [
   {
-    question: "Explain John 3:16 from a Catholic perspective",
-    description: "Get insights into this foundational verse about God's love and salvation through Catholic theological understanding."
+    question: "Explain John 3:16 from a Christian perspective",
+    description: "Get insights into this foundational verse about God's love and salvation through Christian theological understanding."
   },
   {
     question: "What does the Bible say about marriage and relationships?",
@@ -31,6 +32,10 @@ const examples = [
 export const Examples = () => {
   const sectionRef = useScrollAnimation();
 
+  const handleClick = () => {
+    window.open('https://www.askpriestai.com', '_blank');
+  };
+
   return (
     <section ref={sectionRef} className="py-20 opacity-0">
       <div className="container">
@@ -55,6 +60,15 @@ export const Examples = () => {
               </AccordionItem>
             ))}
           </Accordion>
+          <div className="mt-12 text-center">
+            <Button 
+              size="lg" 
+              className="bg-primary-gold-dark hover:bg-primary-gold text-white"
+              onClick={handleClick}
+            >
+              Ask Your Own Question Now
+            </Button>
+          </div>
         </div>
       </div>
     </section>
