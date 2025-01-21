@@ -66,7 +66,7 @@ export const Examples = () => {
               className="bg-primary-gold-dark hover:bg-primary-gold text-white"
               onClick={handleClick}
             >
-              Ask Your Own Question Now
+              Find Your Answers Now
             </Button>
           </div>
         </div>

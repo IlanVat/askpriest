@@ -1,14 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Lock, Heart, Shield } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Button } from "@/components/ui/button";
 
 export const Privacy = () => {
   const sectionRef = useScrollAnimation();
-
-  const handleClick = () => {
-    window.open('https://www.askpriestai.com', '_blank');
-  };
 
   return (
     <section ref={sectionRef} className="py-20 bg-white opacity-0">
@@ -46,15 +41,6 @@ export const Privacy = () => {
                 <p className="text-foreground/60">{item.description}</p>
               </Card>
             ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Button 
-              size="lg" 
-              className="bg-primary-gold-dark hover:bg-primary-gold text-white"
-              onClick={handleClick}
-            >
-              Start Your Private Conversation
-            </Button>
           </div>
         </div>
       </div>
