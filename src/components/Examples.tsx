@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Button } from "@/components/ui/button";
 
 const examples = [
   {
@@ -30,6 +31,10 @@ const examples = [
 
 export const Examples = () => {
   const sectionRef = useScrollAnimation();
+  
+  const handleClick = () => {
+    window.open('https://www.askpriestai.com', '_blank');
+  };
 
   return (
     <section ref={sectionRef} className="py-20 opacity-0">
@@ -55,6 +60,15 @@ export const Examples = () => {
               </AccordionItem>
             ))}
           </Accordion>
+          <div className="mt-12 text-center">
+            <Button 
+              size="lg" 
+              className="bg-primary-gold-dark hover:bg-primary-gold text-white"
+              onClick={handleClick}
+            >
+              Find Your Answers Now
+            </Button>
+          </div>
         </div>
       </div>
     </section>
