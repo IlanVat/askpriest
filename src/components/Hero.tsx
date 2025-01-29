@@ -17,13 +17,10 @@ export const Hero = () => {
           Faith at Your Fingertips
         </h1>
         <p className="text-xl md:text-2xl text-foreground/80 font-serif">
-          Meet AskPriest, Your Virtual Christian Guide
-        </p>
-        <p className="text-2xl font-serif text-foreground/90 italic">
-          Seek Guidance. Find Peace. Strengthen Your Faith.
+          Personalized Christian Guidance, 24/7
         </p>
         <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-          Experience 24/7 spiritual guidance powered by the most advanced AI, offering biblical wisdom and compassionate answers to your faith questions.
+          AskPriestAI gives you instant, tailored answers—whenever you need them. Get started for free.
         </p>
         <div className="flex justify-center pt-4">
           <Button 
