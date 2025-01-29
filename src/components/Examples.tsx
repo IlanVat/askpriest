@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const examples = [
   {
-    question: "Explain John 3:16 from a Christian perspective",
-    description: "Get insights into this foundational verse about God's love and salvation through Christian theological understanding."
+    question: "Explain John 3:16 from a Catholic perspective",
+    description: "Get insights into this foundational verse about God's love and salvation through Catholic theological understanding."
   },
   {
     question: "What does the Bible say about marriage and relationships?",
