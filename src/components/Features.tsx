@@ -9,7 +9,7 @@ const features = [
   {
     emoji: "🕊️",
     title: "A Safe, Judgment-Free Space",
-    description: "Ask anything—big or small—with complete privacy. No need to approach a priest in person if you're hesitant.",
+    description: "Ask anything-big or small-with complete privacy. No need to approach a priest in person if you're hesitant.",
   },
   {
     emoji: "⏳",
