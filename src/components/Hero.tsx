@@ -20,7 +20,7 @@ export const Hero = () => {
           Personalized Christian Guidance, 24/7
         </p>
         <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-          AskPriestAI gives you instant, tailored answers - whenever you need them. Get started for free.
+          AskPriestAI gives you instant, tailored answers—whenever you need them. Get started for free.
         </p>
         <div className="flex justify-center pt-4">
           <Button 
