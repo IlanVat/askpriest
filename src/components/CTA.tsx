@@ -15,7 +15,7 @@ export const CTA = () => {
           Begin Your Spiritual Journey Today
         </h2>
         <p className="text-lg mb-4 max-w-2xl mx-auto">
-          Join thousands of believers finding guidance, understanding, and spiritual growth through AskPriest.
+          Join thousands of Christians who have found clarity, comfort, and confidence in their faith with AskPriestAI.
         </p>
         <p className="text-lg mb-8 max-w-2xl mx-auto font-semibold">
           Start with 5 free questions. No credit card required.
