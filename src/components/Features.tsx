@@ -9,12 +9,12 @@ const features = [
   {
     emoji: "🕊️",
     title: "A Safe, Judgment-Free Space",
-    description: "Ask anything—big or small—with complete privacy. No need to approach a priest in person if you're hesitant.",
+    description: "Ask anything - big or small - with complete privacy. No need to approach a priest in person if you're hesitant.",
   },
   {
     emoji: "⏳",
     title: "Always Available, Anytime",
-    description: "Busy schedule? No worries. Whether it's a late-night faith question or a Sunday morning doubt, AskPriestAI is here for you—24/7.",
+    description: "Busy schedule? No worries. Whether it's a late-night faith question or a Sunday morning doubt, AskPriestAI is here for you - 24/7.",
   },
   {
     emoji: "📖",
