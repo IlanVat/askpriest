@@ -9,7 +9,7 @@ export const CTA = () => {
   };
 
   return (
-    <section className="py-20 bg-primary-gold">
+    <section className="py-20 bg-primary-gold w-full">
       <div className="container text-center">
         <h2 className="text-3xl md:text-4xl font-serif mb-6">
           Begin Your Spiritual Journey Today
