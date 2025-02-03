@@ -21,7 +21,7 @@ export const CTA = () => {
           Start with 5 free questions. No credit card required.
         </p>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
-          After your free questions, continue your journey for $9.99/month or save up to 30% with an annual plan.
+          After your free questions, continue your journey for as low as $9.99/month or save up to 30% with an annual plan.
         </p>
         <Button 
           size="lg" 

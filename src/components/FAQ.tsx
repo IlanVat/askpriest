@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: "How many questions can I ask for free?",
-      answer: "New users can ask up to 5 questions per month for free. After that, continue your spiritual journey for $9.99/month or save up to 30% with an annual plan. There's no credit card required to start with the free questions.",
+      answer: "New users can ask up to 5 questions per month for free. After that, continue your spiritual journey for as low as $9.99/month or save up to 30% with an annual plan. There's no credit card required to start with the free questions.",
       icon: Info,
     },
     {
