@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -22,15 +23,16 @@ export const Hero = () => {
         <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
           AskPriestAI gives you instant, tailored answers—whenever you need them. Get started for free.
         </p>
-        <div className="flex justify-center pt-4">
+        <div className="flex flex-col items-center gap-2 pt-4">
           <Button 
             size="lg" 
             className="bg-primary-gold-dark hover:bg-primary-gold text-white"
             onClick={handleClick}
           >
-            Start Your Faith Journey for Free
+            Start Your Faith Journey Now
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
+          <p className="text-sm text-foreground/60">Try it for free - no commitment needed!</p>
         </div>
       </div>
       <div className="mt-12 w-full max-w-full overflow-hidden px-4">
