@@ -30,7 +30,7 @@ export const CTA = () => {
           className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 text-white"
           onClick={handleClick}
         >
-          Start for Free. No Commitment Needed.
+          Ask Anything Now
         </Button>
         <p className="text-sm mt-4 flex items-center justify-center gap-2">
           <Lightbulb className="h-4 w-4 flex-shrink-0 mt-0.5" />
