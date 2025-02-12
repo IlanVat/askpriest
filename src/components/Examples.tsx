@@ -71,7 +71,7 @@ export const Examples = () => {
               Find Your Answers Now
             </Button>
             <p className="text-sm text-foreground/60 flex items-center justify-center gap-2">
-              <Shield className="h-5 w-5 md:h-4 md:w-4 flex-shrink-0 mt-0.5" />
+              <Shield className="h-4 w-4 flex-shrink-0 mt-0.5" />
               Get precise, faith-based answers, not random internet opinions.
             </p>
           </div>
