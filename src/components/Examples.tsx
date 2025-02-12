@@ -1,6 +1,8 @@
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
+import { Shield } from "lucide-react";
 
 const examples = [
   {
@@ -60,7 +62,7 @@ export const Examples = () => {
               </AccordionItem>
             ))}
           </Accordion>
-          <div className="mt-12 text-center">
+          <div className="mt-12 text-center space-y-2">
             <Button 
               size="lg" 
               className="bg-primary-gold-dark hover:bg-primary-gold text-white"
@@ -68,6 +70,10 @@ export const Examples = () => {
             >
               Find Your Answers Now
             </Button>
+            <p className="text-sm text-foreground/60 flex items-center justify-center gap-2">
+              <Shield className="h-4 w-4" />
+              Get precise, faith-based answers, not random internet opinions.
+            </p>
           </div>
         </div>
       </div>

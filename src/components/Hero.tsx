@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Gift, Shield } from "lucide-react";
+import { ArrowRight, Gift } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImgurEmbed } from "./ImgurEmbed";
 
@@ -35,10 +35,6 @@ export const Hero = () => {
           <p className="text-sm text-foreground/60 flex items-center gap-2">
             <Gift className="h-4 w-4" />
             Try it for free - no commitment needed!
-          </p>
-          <p className="text-sm text-foreground/60 flex items-center gap-2 mt-2">
-            <Shield className="h-4 w-4" />
-            Get precise, faith-based answers, not random internet opinions.
           </p>
         </div>
       </div>
