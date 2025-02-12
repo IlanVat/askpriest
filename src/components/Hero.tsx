@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Gift } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImgurEmbed } from "./ImgurEmbed";
 
@@ -32,7 +32,10 @@ export const Hero = () => {
             Start Your Faith Journey Now
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          <p className="text-sm text-foreground/60">Try it for free - no commitment needed!</p>
+          <p className="text-sm text-foreground/60 flex items-center gap-2">
+            <Gift className="h-4 w-4" />
+            Try it for free - no commitment needed!
+          </p>
         </div>
       </div>
       <div className="mt-12 w-full max-w-full overflow-hidden px-4">
