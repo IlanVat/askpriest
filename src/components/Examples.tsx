@@ -2,7 +2,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { Shield, Lightbulb } from "lucide-react";
+import { Shield } from "lucide-react";
 
 const examples = [
   {
@@ -73,10 +73,6 @@ export const Examples = () => {
             <p className="text-sm text-foreground/60 flex items-center justify-center gap-2">
               <Shield className="h-4 w-4 flex-shrink-0 mt-0.5" />
               Get precise, faith-based answers, not random internet opinions.
-            </p>
-            <p className="text-sm text-foreground/60 flex items-center justify-center gap-2">
-              <Lightbulb className="h-4 w-4 flex-shrink-0 mt-0.5" />
-              Simple and intuitive—no learning curve!
             </p>
           </div>
         </div>

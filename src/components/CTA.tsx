@@ -1,5 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { Lightbulb } from "lucide-react";
 
 export const CTA = () => {
   const navigate = useNavigate();
@@ -30,6 +32,10 @@ export const CTA = () => {
         >
           Start for Free. No Commitment Needed.
         </Button>
+        <p className="text-sm mt-4 flex items-center justify-center gap-2">
+          <Lightbulb className="h-4 w-4 flex-shrink-0 mt-0.5" />
+          Simple and intuitive—no learning curve!
+        </p>
       </div>
     </section>
   );
