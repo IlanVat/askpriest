@@ -10,7 +10,7 @@ export const Hero = () => {
 
   const handleClick = () => {
     trackEvent('StartJourney');
-    window.open('https://www.askpriestai.com/login_signup?screen=Signup', '_blank');
+    window.location.href = 'https://www.askpriestai.com/login_signup?screen=Signup';
   };
 
   return (

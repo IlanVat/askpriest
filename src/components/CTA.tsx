@@ -9,7 +9,7 @@ export const CTA = () => {
 
   const handleClick = () => {
     trackEvent('AskAnything');
-    window.open('https://www.askpriestai.com/login_signup?screen=Signup', '_blank');
+    window.location.href = 'https://www.askpriestai.com/login_signup?screen=Signup';
   };
 
   return (
