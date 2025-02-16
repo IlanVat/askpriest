@@ -64,4 +64,18 @@
   html.dark {
     color-scheme: dark;
   }
+
+  .dark .bg-white {
+    @apply bg-background;
+  }
+
+  .dark .bg-primary-gold-light {
+    @apply bg-background;
+  }
+
+  .dark .text-foreground\/60,
+  .dark .text-foreground\/70,
+  .dark .text-foreground\/80 {
+    @apply text-foreground/60;
+  }
 }
