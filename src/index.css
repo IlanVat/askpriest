@@ -76,6 +76,6 @@
   .dark .text-foreground\/60,
   .dark .text-foreground\/70,
   .dark .text-foreground\/80 {
-    @apply text-foreground/60;
+    color: hsl(var(--foreground) / 0.6);
   }
 }
