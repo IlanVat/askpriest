@@ -1,8 +1,8 @@
-
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
+import { trackEvent } from "@/utils/analytics";
 
 const examples = [
   {
@@ -35,6 +35,7 @@ export const Examples = () => {
   const sectionRef = useScrollAnimation();
   
   const handleClick = () => {
+    trackEvent('FindAnswers');
     window.open('https://www.askpriestai.com', '_blank');
   };
 

@@ -1,13 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImgurEmbed } from "./ImgurEmbed";
+import { trackEvent } from "@/utils/analytics";
 
 export const Hero = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
+    trackEvent('StartJourney');
     window.open('https://www.askpriestai.com', '_blank');
   };
 
