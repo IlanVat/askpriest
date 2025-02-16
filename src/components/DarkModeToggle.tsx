@@ -22,7 +22,8 @@ export const DarkModeToggle = () => {
       variant="outline"
       size="icon"
       onClick={toggleDarkMode}
-      className="fixed top-4 left-4 h-8 w-8 rounded-full bg-background"
+      className="fixed top-4 left-4 h-8 w-8 rounded-full bg-background z-50"
+      style={{ position: 'fixed' }}
     >
       {isDark ? (
         <Sun className="h-4 w-4" />
