@@ -1,3 +1,4 @@
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
@@ -36,7 +37,7 @@ export const Examples = () => {
   
   const handleClick = () => {
     trackEvent('FindAnswers');
-    window.open('https://www.askpriestai.com', '_blank');
+    window.open('https://www.askpriestai.com/login_signup?screen=Signup', '_blank');
   };
 
   return (

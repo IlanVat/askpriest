@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +10,7 @@ export const Hero = () => {
 
   const handleClick = () => {
     trackEvent('StartJourney');
-    window.open('https://www.askpriestai.com', '_blank');
+    window.open('https://www.askpriestai.com/login_signup?screen=Signup', '_blank');
   };
 
   return (
