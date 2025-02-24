@@ -22,7 +22,7 @@ export const CTA = () => {
           Join thousands of Christians who have found clarity, comfort, and confidence in their faith with AskPriestAI.
         </p>
         <p className="text-lg mb-4 max-w-2xl mx-auto font-semibold">
-          Start with 5 free questions. No credit card required.
+          Start with 10 free questions. No credit card required.
         </p>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
           After your free questions, continue your journey for as low as $9.99/month or save up to 30% with an annual plan.
