@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Lock, Heart, Shield } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -6,7 +7,7 @@ export const Privacy = () => {
   const sectionRef = useScrollAnimation();
 
   return (
-    <section ref={sectionRef} className="py-20 bg-white opacity-0">
+    <section ref={sectionRef} className="py-20 bg-primary-gold-light opacity-0">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif text-center mb-8">Your Privacy Matters to Us</h2>
