@@ -17,17 +17,10 @@ export const Hero = () => {
     <section className="min-h-[92vh] flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-white to-primary-gold-light/20 text-gray-800">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="space-y-6 text-left animate-fadeIn">
+          <div className="space-y-6 text-left animate-fadeIn order-1">
             <div className="inline-flex items-center mb-4">
               <div className="flex items-center border border-primary-gold/40 rounded-full px-3 py-1">
-                <span className="text-xs text-primary-gold-dark mr-2">Trusted by thousands</span>
-                <div className="flex items-center space-x-1">
-                  <span className="text-primary-gold-dark">★</span>
-                  <span className="text-primary-gold-dark">★</span>
-                  <span className="text-primary-gold-dark">★</span>
-                  <span className="text-primary-gold-dark">★</span>
-                  <span className="text-primary-gold-dark">★</span>
-                </div>
+                <span className="text-xs text-primary-gold-dark">Trusted by thousands</span>
               </div>
             </div>
             
@@ -72,7 +65,7 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative order-first md:order-last flex justify-center">
+          <div className="relative order-2 md:order-last flex justify-center">
             <div className="relative w-full max-w-[350px] rounded-lg overflow-hidden border border-primary-gold/30 shadow-[0_0_30px_rgba(218,165,32,0.15)]">
               <ImgurEmbed />
             </div>
