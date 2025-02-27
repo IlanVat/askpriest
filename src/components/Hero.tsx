@@ -13,7 +13,7 @@ export const Hero = () => {
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 text-left animate-fadeIn order-1">
-            <h1 className="md:text-6xl font-serif font-bold leading-tight text-5xl">
+            <h1 className="md:text-6xl font-serif font-bold leading-tight text-4xl">
               <span className="text-gray-800">Navigate faith 
             </span>
               <br />
