@@ -1,14 +1,17 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImgurEmbed } from "./ImgurEmbed";
 import { trackEvent } from "@/utils/analytics";
+
 export const Hero = () => {
   const navigate = useNavigate();
   const handleClick = () => {
     trackEvent('StartJourney');
     window.location.href = 'https://www.askpriestai.com/login_signup?screen=Signup';
   };
+
   return <section className="min-h-[92vh] flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-white to-primary-gold-light/20 text-gray-800">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -17,7 +20,7 @@ export const Hero = () => {
               <span className="text-gray-800">Christ-centered</span>
               <br />
               <span className="text-gray-800">guidance</span>{" "}
-              <span className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 inline-block py-0.5 px-2 rounded text-gray-800">not waiting</span>
+              <span className="bg-amber-400 hover:bg-amber-300 inline-block py-0.5 px-2 rounded text-gray-800">not waiting</span>
             </h1>
             
             <p className="text-lg text-gray-600 max-w-xl">
