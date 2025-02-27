@@ -28,7 +28,7 @@ export const Hero = () => {
               <span className="text-gray-800">Christ-centered</span>
               <br />
               <span className="text-gray-800">guidance</span>{" "}
-              <span className="bg-primary-gold-dark inline-block py-0.5 px-2 rounded text-gray-800">not waiting</span>
+              <span className="bg-primary-gold-dark/90 inline-block py-0.5 px-2 rounded text-gray-800">not waiting</span>
             </h1>
             
             <p className="text-lg text-gray-600 max-w-xl">
