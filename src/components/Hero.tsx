@@ -1,8 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImgurEmbed } from "./ImgurEmbed";
 import { trackEvent } from "@/utils/analytics";
+
 export const Hero = () => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -14,17 +16,18 @@ export const Hero = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 text-left animate-fadeIn order-1">
             <h1 className="md:text-6xl font-serif font-bold leading-tight text-4xl">
-              <span className="text-gray-800">Navigate faith 
+              <span className="text-gray-800">Navigate faith 
             </span>
               <br />
               <span className="text-gray-800">questions in seconds,</span>{" "}
               <span className="bg-amber-300 hover:bg-amber-200 inline-block py-0.5 px-2 rounded text-gray-800">not days</span>
             </h1>
             
-            <p className="text-lg text-gray-600 max-w-xl">"Is this a sin?"
-"How do I interpret this verse?"
-Get instant responses to any question on your mind from our AI spiritual companion.
-          </p>
+            <p className="text-lg text-gray-600 max-w-xl">
+              "Is this a sin?"<br />
+              "How do I interpret this verse?"<br />
+              Get instant responses to any question on your mind from our AI spiritual companion.
+            </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" onClick={handleClick} className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 font-medium text-slate-900 bg-amber-300 hover:bg-amber-200">
