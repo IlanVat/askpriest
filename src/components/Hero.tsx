@@ -18,17 +18,11 @@ export const Hero = () => {
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 text-left animate-fadeIn order-1">
-            <div className="inline-flex items-center mb-4">
-              <div className="flex items-center border border-primary-gold/40 rounded-full px-3 py-1">
-                <span className="text-xs text-primary-gold-dark">Trusted by thousands</span>
-              </div>
-            </div>
-            
             <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight">
               <span className="text-gray-800">Christ-centered</span>
               <br />
               <span className="text-gray-800">guidance</span>{" "}
-              <span className="bg-primary-gold-dark inline-block py-0.5 px-2 rounded text-gray-800">not waiting</span>
+              <span className="bg-primary-gold-light inline-block py-0.5 px-2 rounded text-gray-800">not waiting</span>
             </h1>
             
             <p className="text-lg text-gray-600 max-w-xl">
@@ -38,7 +32,7 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 text-gray-800 font-medium"
+                className="bg-primary-gold-light hover:bg-primary-gold-light/90 text-gray-800 font-medium"
                 onClick={handleClick}
               >
                 Start Your Faith Journey
@@ -70,7 +64,7 @@ export const Hero = () => {
               <ImgurEmbed />
             </div>
             
-            <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-radial from-primary-gold/20 to-transparent"></div>
+            <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-radial from-primary-gold-light/20 to-transparent"></div>
           </div>
         </div>
       </div>
