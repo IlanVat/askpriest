@@ -14,7 +14,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-[92vh] flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-[#1A1F2C] to-[#1A1F2C]/95 text-white">
+    <section className="min-h-[92vh] flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-[#2C1A1A] to-[#1A1F2C] text-white">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 text-left animate-fadeIn">
