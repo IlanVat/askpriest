@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Gift, Cross, ChevronRight } from "lucide-react";
+import { ArrowRight, Gift, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImgurEmbed } from "./ImgurEmbed";
 import { trackEvent } from "@/utils/analytics";
@@ -14,25 +14,19 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-[92vh] flex flex-col items-center justify-center px-4 py-16 bg-[#1A1F2C] text-white">
+    <section className="min-h-[92vh] flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-[#1A1F2C] to-[#1A1F2C]/95 text-white">
       <div className="max-w-7xl w-full mx-auto">
-        {/* Badge */}
-        <div className="flex justify-center mb-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-primary-gold-light/30">
-            <Cross className="h-4 w-4 text-primary-gold" />
-            <span className="text-sm text-primary-gold-light">Faith Companion</span>
-          </div>
-        </div>
-        
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 text-left animate-fadeIn">
             <div className="inline-flex items-center mb-4">
               <div className="flex items-center border border-primary-gold-light/40 rounded-full px-3 py-1">
                 <span className="text-xs text-primary-gold-light mr-2">Trusted by thousands</span>
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4, 5].map((item) => (
-                    <div key={item} className="w-5 h-5 rounded-full bg-primary-gold-dark/60 border border-[#1A1F2C]"></div>
-                  ))}
+                <div className="flex items-center space-x-1">
+                  <span className="text-primary-gold">★</span>
+                  <span className="text-primary-gold">★</span>
+                  <span className="text-primary-gold">★</span>
+                  <span className="text-primary-gold">★</span>
+                  <span className="text-primary-gold">★</span>
                 </div>
               </div>
             </div>
@@ -41,7 +35,7 @@ export const Hero = () => {
               <span className="text-white">Christ-centered</span>
               <br />
               <span className="text-white">guidance</span>{" "}
-              <span className="bg-primary-gold text-[#1A1F2C] px-2 py-1 rounded">not waiting</span>
+              <span className="bg-primary-gold inline-block py-0.5 px-2 rounded text-[#1A1F2C]">not waiting</span>
             </h1>
             
             <p className="text-lg text-gray-300 max-w-xl">
