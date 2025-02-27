@@ -23,7 +23,7 @@ export const Hero = () => {
             
             <p className="text-lg text-gray-600 max-w-xl">"Is this a sin?"
 "How do I interpret this verse?"
-Get instant responses from our AI companion. Start for free!
+Get instant responses to any question on your mind from our AI spiritual companion.
           </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
