@@ -29,7 +29,7 @@ export const CTA = () => {
         </p>
         <Button 
           size="lg" 
-          className="bg-primary-gold hover:bg-primary-gold-dark text-gray-800"
+          className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 text-gray-800"
           onClick={handleClick}
         >
           Ask Anything Now
