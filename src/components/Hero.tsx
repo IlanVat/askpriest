@@ -22,8 +22,8 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg text-gray-600 max-w-xl">"Is this a sin?"
-"How do I interpret this verse?" 
-Get instant, denomination-aligned responses from our AI companion. 7-day free trial available."
+"How do I interpret this verse?"
+Get instant responses from our AI companion. Start for free!
           </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
