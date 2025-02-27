@@ -13,11 +13,12 @@ export const Hero = () => {
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 text-left animate-fadeIn order-1">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight">
-              <span className="text-gray-800">Christ-centered</span>
+            <h1 className="md:text-6xl font-serif font-bold leading-tight text-5xl">
+              <span className="text-gray-800">Navigate faith 
+            </span>
               <br />
-              <span className="text-gray-800">guidance</span>{" "}
-              <span className="bg-amber-300 hover:bg-amber-200 inline-block py-0.5 px-2 rounded text-gray-800">not waiting</span>
+              <span className="text-gray-800">questions in seconds,</span>{" "}
+              <span className="bg-amber-300 hover:bg-amber-200 inline-block py-0.5 px-2 rounded text-gray-800">not days</span>
             </h1>
             
             <p className="text-lg text-gray-600 max-w-xl">
