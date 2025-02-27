@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +25,7 @@ export const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" onClick={handleClick} className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 font-medium text-slate-900 bg-amber-500 hover:bg-amber-400">
+              <Button size="lg" onClick={handleClick} className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 font-medium text-slate-900 bg-amber-400 hover:bg-amber-300">
                 Start Your Faith Journey
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
