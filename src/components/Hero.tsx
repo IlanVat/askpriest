@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -13,12 +14,6 @@ export const Hero = () => {
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 text-left animate-fadeIn order-1">
-            <div className="inline-flex items-center mb-4">
-              <div className="flex items-center border border-primary-gold/40 rounded-full px-3 py-1">
-                <span className="text-xs text-primary-gold-dark">Trusted by thousands</span>
-              </div>
-            </div>
-            
             <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight">
               <span className="text-gray-800">Christ-centered</span>
               <br />
