@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -58,6 +59,9 @@ export default {
         fadeIn: "fadeIn 0.5s ease-out forwards",
         scrollReveal: "scrollReveal 0.6s ease-out forwards",
         scrollHide: "scrollHide 0.6s ease-out forwards"
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
   },
