@@ -21,9 +21,10 @@ export const Hero = () => {
               <span className="bg-amber-300 hover:bg-amber-200 inline-block py-0.5 px-2 rounded text-gray-800">not days</span>
             </h1>
             
-            <p className="text-lg text-gray-600 max-w-xl">
-              The AI-powered priest assistant that provides tailored Christian answers whenever you need them, 24/7. Get started with 10 free questions.
-            </p>
+            <p className="text-lg text-gray-600 max-w-xl">"Is this a sin?"
+"How do I interpret this verse?" 
+Get instant, denomination-aligned responses from our AI companion. 7-day free trial available."
+          </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" onClick={handleClick} className="bg-primary-gold-dark hover:bg-primary-gold-dark/90 font-medium text-slate-900 bg-amber-300 hover:bg-amber-200">
