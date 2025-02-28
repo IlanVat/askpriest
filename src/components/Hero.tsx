@@ -1,10 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ImgurEmbed } from "./ImgurEmbed";
 import { trackEvent } from "@/utils/analytics";
-
 export const Hero = () => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -37,7 +35,7 @@ export const Hero = () => {
               
               <div className="flex items-center text-sm text-gray-600">
                 <Gift className="h-4 w-4 mr-2 text-primary-gold-dark" />
-                <span>10 free questions, no credit card</span>
+                <span>10 free questions, no credit card required</span>
               </div>
             </div>
             
