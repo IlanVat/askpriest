@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -24,6 +25,7 @@ export const Hero = () => {
             <p className="text-lg text-gray-600 max-w-xl">
               "Is this a sin?"<br />
               "How do I interpret this verse?"<br />
+              No more random generic internet opinions.<br />
               Get instant personalized responses to any question on your mind from our AI spiritual companion.
             </p>
             
