@@ -26,7 +26,7 @@ export const Hero = () => {
               "Is this a sin?"<br />
               "How do I interpret this verse?"<br />
               No more random generic internet opinions.<br />
-              Get instant personalized responses to any question on your mind from our AI spiritual companion.
+              Get instant personalized responses to any question on your mind from our advanced AI spiritual companion.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
