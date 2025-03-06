@@ -42,21 +42,19 @@ export const Hero = () => {
                 <span>10 free questions, no credit card required</span>
               </div>
             </div>
-            
-            <div className="flex items-center pt-6">
-              <div className="flex items-center">
-                <Heart className="h-5 w-5 text-primary-gold-dark mr-2" />
-                <span className="text-sm text-gray-600">Made by believers, for believers.</span>
-              </div>
-            </div>
           </div>
           
-          <div className="relative order-2 md:order-last flex justify-center">
+          <div className="relative order-2 md:order-last flex flex-col justify-center">
             <div className="relative w-full max-w-[350px] rounded-lg overflow-hidden border border-primary-gold/30 shadow-[0_0_30px_rgba(218,165,32,0.15)]">
               <ImgurEmbed />
             </div>
             
             <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-radial from-primary-gold/20 to-transparent"></div>
+            
+            <div className="flex items-center justify-center mt-4">
+              <Heart className="h-5 w-5 text-primary-gold-dark mr-2" />
+              <span className="text-sm text-gray-600">Made by believers, for believers.</span>
+            </div>
           </div>
         </div>
       </div>
