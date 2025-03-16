@@ -8,15 +8,15 @@ export const RelatedArticles: React.FC = () => {
       <h3 className="text-xl font-bold mb-4 font-serif">Related Articles</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="border p-4 rounded-lg hover:shadow-md transition-all">
-          <Link to="/blog/prayer-techniques-busy-lives" className="hover:underline">
-            <h4 className="font-medium mb-1">Prayer Techniques for Busy Lives</h4>
-            <p className="text-sm text-gray-600">Simple but effective ways to maintain a prayer life when your schedule seems impossible.</p>
+          <Link to="/blog/digital-discipleship-technology" className="hover:underline">
+            <h4 className="font-medium mb-1">Digital Discipleship: Using Technology to Grow Faith</h4>
+            <p className="text-sm text-gray-600">How modern technology and Christian AI can be leveraged as tools for spiritual development.</p>
           </Link>
         </div>
         <div className="border p-4 rounded-lg hover:shadow-md transition-all">
-          <Link to="/blog/finding-peace-uncertain-times" className="hover:underline">
-            <h4 className="font-medium mb-1">Finding Peace in Uncertain Times</h4>
-            <p className="text-sm text-gray-600">Biblical wisdom for maintaining spiritual peace during periods of personal or global uncertainty.</p>
+          <Link to="/blog/spiritual-disciplines-for-a-distracted-age" className="hover:underline">
+            <h4 className="font-medium mb-1">Spiritual Disciplines for a Distracted Age</h4>
+            <p className="text-sm text-gray-600">Rediscovering ancient Christian practices that can help believers maintain focus in our digital world.</p>
           </Link>
         </div>
       </div>

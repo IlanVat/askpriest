@@ -21,7 +21,7 @@ export const culturePosts: BlogPost[] = [
     readTime: "7 min read",
     category: "Technology",
     slug: "digital-discipleship-technology",
-    keywords: "christian technology, digital faith, AI spiritual tools, online church, faith apps"
+    keywords: "christian technology, digital faith, AI spiritual tools, online church, faith apps, Christian AI"
   },
   {
     id: 17,
@@ -31,7 +31,7 @@ export const culturePosts: BlogPost[] = [
     readTime: "14 min read",
     category: "Technology",
     slug: "ai-mark-of-beast-biblical-prophecy",
-    keywords: "ai benefits, christian technology, biblical perspective on ai, digital discipleship, askpriestai"
+    keywords: "ai benefits, christian technology, biblical perspective on ai, digital discipleship, askpriestai, Christian AI"
   },
   {
     id: 15,

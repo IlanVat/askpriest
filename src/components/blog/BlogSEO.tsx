@@ -13,7 +13,7 @@ interface BlogSEOProps {
 export const BlogSEO: React.FC<BlogSEOProps> = ({
   title = "Christian Insights Blog | Biblical Wisdom and Spiritual Growth | AskPriestAI",
   description = "Explore Christian articles on faith, prayer, biblical wisdom, and spiritual growth. Get expert insights on modern faith challenges and practical spiritual guidance.",
-  keywords = "christian blog, bible study, prayer guides, spiritual growth, faith journey, christian community, biblical wisdom",
+  keywords = "christian blog, bible study, prayer guides, spiritual growth, faith journey, christian community, biblical wisdom, Christian AI",
   url = "https://www.askpriestai.com/blog",
   today
 }) => {

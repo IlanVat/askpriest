@@ -21,7 +21,7 @@ export const spiritualGrowthPosts: BlogPost[] = [
     readTime: "9 min read",
     category: "Spiritual Growth",
     slug: "spiritual-disciplines-for-a-distracted-age",
-    keywords: "spiritual disciplines, christian focus, meditation, contemplative prayer, christian habits"
+    keywords: "spiritual disciplines, christian focus, meditation, contemplative prayer, christian habits, Christian AI"
   },
   {
     id: 3,
