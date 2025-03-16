@@ -7,10 +7,12 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { Testimonials } from "@/components/Testimonials";
 import { Privacy } from "@/components/Privacy";
 import FAQ from "@/components/FAQ";
+import { Header } from "@/components/Header";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       <Hero />
       <HowItWorks />
       <Features />
@@ -24,4 +26,3 @@ const Index = () => {
 };
 
 export default Index;
-
