@@ -1,9 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { BlogPost } from "@/data/blogPosts";
+import { BlogPost } from "@/data/blog";
 
 interface FeaturedPostProps {
   post: BlogPost;

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Header } from "@/components/Header";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts } from "@/data/blog";
 import { BlogHeader } from "@/components/blog/BlogHeader";
 import { FeaturedPost } from "@/components/blog/FeaturedPost";
 import { BlogPostGrid } from "@/components/blog/BlogPostGrid";

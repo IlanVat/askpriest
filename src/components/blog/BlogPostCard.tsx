@@ -1,9 +1,8 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { BlogPost } from "@/data/blogPosts";
+import { BlogPost } from "@/data/blog";
 
 interface BlogPostCardProps {
   post: BlogPost;

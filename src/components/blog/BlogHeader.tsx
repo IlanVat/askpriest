@@ -1,6 +1,5 @@
-
 import React from "react";
-import { BlogPost } from "@/data/blogPosts";
+import { BlogPost } from "@/data/blog";
 
 interface BlogHeaderProps {
   searchTerm: string;

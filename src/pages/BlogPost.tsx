@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Header } from "@/components/Header";
@@ -8,7 +7,7 @@ import { BlogPostNotFound } from "@/components/blog/BlogPostNotFound";
 import { BlogPostContent } from "@/components/blog/BlogPostContent";
 import { BlogSEO } from "@/components/blog/BlogSEO";
 import { getMockPosts } from "@/utils/blogPostUtils";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts } from "@/data/blog";
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();

@@ -1,9 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { BlogPostCard } from "./BlogPostCard";
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
-import { BlogPost } from "@/data/blogPosts";
+import { BlogPost } from "@/data/blog";
 
 interface BlogPostGridProps {
   posts: BlogPost[];
