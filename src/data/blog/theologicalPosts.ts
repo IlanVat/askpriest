@@ -24,6 +24,16 @@ export const theologicalPosts: BlogPost[] = [
     keywords: "biblical sexuality, christian sexual ethics, church compromise, cultural christianity, scriptural authority"
   },
   {
+    id: 13,
+    title: "Divine Sovereignty vs. Human Free Will: Finding the Biblical Balance",
+    excerpt: "Reconciling God's perfect control with human responsibility. How different theological traditions approach this tension and what Scripture actually teaches.",
+    date: "2025-03-22",
+    readTime: "16 min read",
+    category: "Doctrine",
+    slug: "divine-sovereignty-human-free-will",
+    keywords: "predestination, free will, calvinism, arminianism, divine providence, theological debates"
+  },
+  {
     id: 14,
     title: "The 'Good Person' Delusion: Why Moral People Still Need Salvation",
     excerpt: "The dangerous lie that being a 'good person' is enough for God. Why moral behavior without Christ leads to eternal separation, regardless of intentions.",
