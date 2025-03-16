@@ -35,30 +35,31 @@ const extractHeadings = (content: string) => {
   return headings;
 };
 
-// Complete unfinished sections in content
+// Complete specific unfinished sections in content (only if they match known section titles)
 const completeUnfinishedSections = (content: string): string => {
   const lines = content.split('\n');
   const completedLines = [...lines];
   
-  // Look for section headers that might be incomplete (no content following them)
+  // Look for specific section headers that might be incomplete
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     
-    // If we find a section header
+    // Only process if this is a section header
     if (line.startsWith('## ')) {
       const sectionTitle = line.replace('## ', '');
       
-      // Check if this is the last line or if the next line is another header (indicating empty section)
+      // Check if this is the last line or if the next line is another header or empty
       const isLastLine = i === lines.length - 1;
       const nextLineIsHeader = !isLastLine && (lines[i+1].startsWith('## ') || lines[i+1].startsWith('# '));
       const nextLinesEmpty = !isLastLine && lines[i+1].trim() === '';
       
-      // If this section appears to be empty or incomplete
-      if (isLastLine || nextLineIsHeader || nextLinesEmpty) {
-        // Generate content based on the section title
+      // Only complete the section if it's empty AND it's one of our known section types
+      if ((isLastLine || nextLineIsHeader || nextLinesEmpty) && 
+          (sectionTitle === "Practical Wisdom" || sectionTitle === "Biblical Wisdom" || sectionTitle === "Conclusion")) {
+        // Generate content based on the specific section title
         let generatedContent = '';
         
-        if (sectionTitle.includes('Practical Wisdom')) {
+        if (sectionTitle === "Practical Wisdom") {
           generatedContent = `
 Here are practical ways to navigate this challenge with biblical wisdom:
 
@@ -88,7 +89,7 @@ Here are practical ways to navigate this challenge with biblical wisdom:
 
 Remember that technology itself is morally neutral—it's our relationship with it that matters. These practices can help ensure that digital tools serve your spiritual growth rather than hinder it.`;
         } 
-        else if (sectionTitle.includes('Biblical Wisdom')) {
+        else if (sectionTitle === "Biblical Wisdom") {
           generatedContent = `
 Scripture provides timeless guidance that applies powerfully to our digital age:
 
@@ -104,7 +105,7 @@ Scripture provides timeless guidance that applies powerfully to our digital age:
 
 These biblical principles provide a foundation for flourishing in the digital age while maintaining spiritual vitality and Christ-centered perspective.`;
         }
-        else if (sectionTitle.includes('Conclusion')) {
+        else if (sectionTitle === "Conclusion") {
           generatedContent = `
 As we navigate the complexities of faith in today's world, remember that technology is merely a tool—neither inherently good nor evil. What matters is how we steward these tools in service of Christ's kingdom. By developing thoughtful practices grounded in Scripture and supported by Christian community, we can leverage the benefits of digital tools while avoiding their pitfalls.
 
@@ -112,24 +113,11 @@ The challenges we face are not unique to our generation—every age has presente
 
 May we be people who engage wisely with technology, maintaining our primary allegiance to Christ rather than digital culture, and demonstrating to a watching world what it means to use these powerful tools in ways that honor God and benefit others.`;
         }
-        else {
-          // Generic content for any other section
-          generatedContent = `
-This section explores important aspects of ${sectionTitle.toLowerCase()} from a biblical perspective.
-
-1. **Scripture's Guidance**: The Bible offers timeless wisdom applicable to this topic through passages in both the Old and New Testaments.
-
-2. **Christian Tradition**: Throughout church history, believers have wrestled with similar challenges and developed helpful insights.
-
-3. **Practical Application**: Applying these principles in daily life requires intentional practices and community support.
-
-4. **Spiritual Formation**: How this topic relates to our ongoing growth in Christ-likeness and spiritual maturity.
-
-By engaging thoughtfully with these dimensions, believers can navigate this area with wisdom and faithfulness to God's Word.`;
-        }
         
-        // Insert the generated content after the section title
-        completedLines.splice(i+1, 0, generatedContent);
+        // Only insert the generated content if we actually have content to insert
+        if (generatedContent) {
+          completedLines.splice(i+1, 0, generatedContent);
+        }
       }
     }
   }
@@ -195,7 +183,7 @@ const createComponents = (content: string) => {
 };
 
 export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
-  // Complete any unfinished sections in the content
+  // Complete specific unfinished sections in the content
   const completedContent = completeUnfinishedSections(post.content);
   
   // Extract headings for table of contents
