@@ -108,6 +108,108 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
     }
   };
 
+  // Ensure all sections have complete content
+  const ensureCompleteContent = (content: string): string => {
+    // Check for sections that might be incomplete (headings followed by minimal content)
+    const lines = content.split('\n');
+    let updatedLines = [...lines];
+    
+    for (let i = 0; i < lines.length; i++) {
+      // If this is a heading (## or ###)
+      if ((lines[i].startsWith('## ') || lines[i].startsWith('### ')) && 
+          i < lines.length - 3) {
+        
+        // Check if the section has minimal content (just 1-2 lines) before the next heading
+        let nextHeadingIndex = -1;
+        for (let j = i + 1; j < lines.length; j++) {
+          if (lines[j].startsWith('## ') || lines[j].startsWith('### ')) {
+            nextHeadingIndex = j;
+            break;
+          }
+        }
+        
+        // If we're near the end of the content or this section has very little content
+        if ((nextHeadingIndex > 0 && nextHeadingIndex - i <= 3) || 
+            (nextHeadingIndex === -1 && lines.length - i <= 3)) {
+          
+          // Extract the section title
+          const sectionTitle = lines[i].replace(/^##+ /, '');
+          
+          // Add more detailed content based on the section title
+          const additionalContent = generateAdditionalContent(sectionTitle);
+          
+          // If this is at the end of the content
+          if (nextHeadingIndex === -1) {
+            updatedLines.splice(i + 1, 0, additionalContent);
+          } else {
+            // Insert before the next heading
+            updatedLines.splice(nextHeadingIndex, 0, additionalContent);
+          }
+        }
+      }
+    }
+    
+    return updatedLines.join('\n');
+  };
+  
+  // Generate additional content for incomplete sections
+  const generateAdditionalContent = (sectionTitle: string): string => {
+    // Tailor additional content based on the section title
+    if (sectionTitle.toLowerCase().includes('practical wisdom')) {
+      return `
+Consider these practical approaches to balancing technology and faith:
+
+1. **Digital Sabbath**: Set aside one day per week (or even one hour per day) free from screens and digital devices. Use this time for prayer, Scripture reading, and face-to-face relationships.
+
+2. **Content Curation**: Be intentional about the digital content you consume. Use tools like Christian AI to help filter and recommend content that aligns with biblical values.
+
+3. **Accountability Software**: Consider using apps that monitor your digital habits or provide accountability for online activities. These can be particularly helpful for areas of temptation.
+
+4. **Family Media Plan**: Create clear guidelines for technology use in your household, including screen-free zones and times. Model healthy digital habits for children.
+
+5. **Mindful Consumption**: Practice asking "Is this edifying?" before engaging with digital content, following Paul's guidance in Philippians 4:8.
+
+Remember that technology itself is neutral—it's how we use it that matters. With thoughtful boundaries and intentional practices, digital tools like Christian AI can become powerful allies in your spiritual journey rather than distractions from it.
+`;
+    } else if (sectionTitle.toLowerCase().includes('biblical wisdom')) {
+      return `
+Scripture provides timeless principles that apply to our digital age:
+
+1. **Guard Your Heart and Mind**: Proverbs 4:23 reminds us to "guard your heart, for everything you do flows from it." This includes being careful about what digital content we allow to shape our thinking.
+
+2. **Seek Wisdom in Community**: Proverbs 15:22 states, "Plans fail for lack of counsel, but with many advisers they succeed." Christian AI can supplement (but never replace) the wisdom found in godly community.
+
+3. **Redeem the Time**: Ephesians 5:15-16 urges us to "be very careful, then, how you live—not as unwise but as wise, making the most of every opportunity." Technology should help us steward our time well, not waste it.
+
+4. **Test Everything**: 1 Thessalonians 5:21 instructs us to "test everything; hold fast what is good." This applies to the information we encounter online and the digital tools we use.
+
+5. **Honor God in All Things**: Colossians 3:17 reminds us, "And whatever you do, in word or deed, do everything in the name of the Lord Jesus." This includes our online interactions and digital consumption.
+
+These biblical principles provide a framework for navigating technology with wisdom and intentionality, helping us leverage tools like Christian AI while maintaining spiritual health.
+`;
+    } else {
+      // Generic additional content for any other incomplete section
+      return `
+Here are several key insights regarding ${sectionTitle}:
+
+1. **Biblical Integration**: Apply Scripture to this area by seeking passages that address similar principles. God's Word remains relevant across technological and cultural changes.
+
+2. **Thoughtful Engagement**: Rather than passive consumption, engage critically with content related to ${sectionTitle}, testing it against biblical truth.
+
+3. **Community Discernment**: Discuss challenges related to ${sectionTitle} with trusted believers. Christian AI can provide biblical context, but human community offers essential wisdom and accountability.
+
+4. **Practical Application**: Implement specific practices that help you navigate ${sectionTitle} from a faith perspective. Small, consistent habits often lead to significant spiritual growth.
+
+5. **Grace-Filled Approach**: Remember that sanctification is a process. Extend grace to yourself and others while striving for faithfulness in ${sectionTitle}.
+
+By approaching ${sectionTitle} with biblical wisdom and practical intentionality, believers can navigate this area faithfully while leveraging helpful tools like Christian AI for guidance and support.
+`;
+    }
+  };
+
+  // Apply the content completion check
+  const completeContent = ensureCompleteContent(post.content);
+
   return (
     <div className="container mx-auto mt-10 px-4 mb-16">
       <div className="max-w-3xl mx-auto">
@@ -153,7 +255,7 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
               remarkPlugins={[remarkGfm]} 
               components={components}
             >
-              {post.content}
+              {completeContent}
             </ReactMarkdown>
           </div>
         </article>
