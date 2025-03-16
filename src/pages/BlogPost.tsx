@@ -1,4 +1,3 @@
-
 import { ChevronRight } from "lucide-react";
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
@@ -775,6 +774,317 @@ Consider these steps for intentional technology use:
 Technology offers powerful tools for growing in faith when used intentionally and wisely. By approaching digital resources with discernment and purpose, believers can leverage modern tools while maintaining the timeless practices of Christian discipleship.
 
 The goal isn't to choose between traditional and digital approaches but to thoughtfully integrate both. When technology serves our spiritual growth rather than dictating it, we can embrace these tools as gifts that enhance rather than replace the foundational elements of Christian formation: Scripture, prayer, community, and worship.
+`
+    },
+    {
+      id: 7,
+      title: "Understanding the Beatitudes: Christ's Path to True Happiness",
+      excerpt: "An in-depth exploration of Jesus' Beatitudes and how these counterintuitive principles offer a roadmap to genuine fulfillment.",
+      date: "2025-03-16T12:00:00Z",
+      readTime: "11 min read",
+      category: "Bible Study",
+      slug: "understanding-the-beatitudes",
+      content: `
+# Understanding the Beatitudes: Christ's Path to True Happiness
+
+The Beatitudes, found at the beginning of Jesus' Sermon on the Mount in Matthew 5:3-12, represent some of the most profound yet counterintuitive teachings in Scripture. These eight declarations of blessedness outline a path to genuine happiness that contradicts conventional wisdom about what makes life fulfilling.
+
+## What Are the Beatitudes?
+
+The Beatitudes are a series of blessings proclaimed by Jesus, each beginning with "Blessed are..." The word "blessed" (makarios in Greek) conveys a state of spiritual well-being and happiness that transcends circumstances. Unlike the fleeting happiness the world offers, the blessedness Jesus describes is deeply rooted in relationship with God.
+
+## The Revolutionary Nature of Christ's Teaching
+
+When Jesus delivered the Beatitudes, He upended conventional assumptions about happiness:
+
+### 1. Blessed are the poor in spirit, for theirs is the kingdom of heaven.
+
+While society prizes self-sufficiency and confidence, Jesus celebrates spiritual dependency. The "poor in spirit" recognize their spiritual bankruptcy and need for God. This humble posture opens the door to God's kingdom.
+
+### 2. Blessed are those who mourn, for they shall be comforted.
+
+In a culture that avoids discomfort, Jesus affirms that genuine grief—over personal sin, the brokenness of the world, or legitimate loss—leads to divine comfort. Authentic spiritual growth often begins with honest mourning.
+
+### 3. Blessed are the meek, for they shall inherit the earth.
+
+Contrary to a world that rewards aggression and self-promotion, Jesus blesses the meek—those who harness their strength under God's control. Meekness isn't weakness but power properly channeled through gentleness and humility.
+
+### 4. Blessed are those who hunger and thirst for righteousness, for they shall be satisfied.
+
+Jesus celebrates those whose deepest cravings are for spiritual integrity and right relationship with God. This spiritual appetite leads to genuine satisfaction, unlike the endless pursuit of worldly desires.
+
+### 5. Blessed are the merciful, for they shall receive mercy.
+
+In a retribution-focused culture, Jesus blesses those who extend compassion to others. The merciful recognize the mercy they've received from God and therefore graciously give it to others.
+
+### 6. Blessed are the pure in heart, for they shall see God.
+
+While external conformity was emphasized by religious leaders of Jesus' day, He focuses on internal transformation. The pure in heart have integrity between their inner motives and outward actions, allowing them to perceive God's presence.
+
+### 7. Blessed are the peacemakers, for they shall be called sons of God.
+
+Against the backdrop of political zealotry and violent resistance to Rome, Jesus blesses those who create reconciliation. Peacemakers reflect God's character by bridging divides and restoring relationships.
+
+### 8. Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven.
+
+Perhaps most counterintuitively, Jesus pronounces blessing on those who suffer because of their faithfulness. Opposition becomes evidence of authentic discipleship.
+
+## Living the Beatitudes Today
+
+The Beatitudes aren't merely idealistic principles but describe the character of Christ's followers. They challenge us to:
+
+1. **Embrace Transformation**: The Beatitudes call us to allow God's Spirit to reshape our character from the inside out.
+
+2. **Redefine Success**: While culture celebrates achievement, wealth, and influence, Jesus offers a radically different metric for a life well-lived.
+
+3. **Live Counterculturally**: Following the Beatitudes inevitably sets believers apart from prevailing cultural values.
+
+4. **Find True Happiness**: The paradoxical path of the Beatitudes leads to a deeper joy than pursuing happiness directly ever could.
+
+## The Journey of Beatitude Living
+
+These teachings aren't meant to be a spiritual checklist but rather a portrait of the developing Christian life. As we grow in Christ, we increasingly embody these qualities, not through self-effort but through the transforming work of the Holy Spirit.
+
+The life described in the Beatitudes isn't easy, but it is genuinely blessed. When we align ourselves with Christ's upside-down kingdom, we discover that true happiness isn't found in pursuing what the world values but in becoming more like the One who taught these revolutionary principles.
+
+As we navigate our complex modern world, the ancient wisdom of the Beatitudes offers a proven path to the kind of happiness that transcends circumstances and satisfies our deepest longings.
+`
+    },
+    {
+      id: 8,
+      title: "Spiritual Disciplines for a Distracted Age",
+      excerpt: "Rediscovering ancient Christian practices that can help believers maintain focus in our attention-fragmented modern world.",
+      date: "2025-03-12T12:00:00Z",
+      readTime: "9 min read",
+      category: "Spiritual Growth",
+      slug: "spiritual-disciplines-for-a-distracted-age",
+      content: `
+# Spiritual Disciplines for a Distracted Age
+
+In our hyperconnected world of endless notifications, content streams, and digital distractions, maintaining spiritual focus has become increasingly challenging. Many Christians find their attention fragmented, their prayer lives shallow, and their engagement with Scripture sporadic. Yet this distracted age makes ancient spiritual disciplines more relevant, not less.
+
+This article explores how time-tested Christian practices can help believers cultivate deep spiritual attention in a world designed to scatter it.
+
+## The Attention Crisis
+
+Before examining specific disciplines, it's worth understanding our modern predicament:
+
+- **Unprecedented Distractions**: The average person encounters more information in a day than someone in the 15th century encountered in a lifetime.
+- **Attention as Currency**: Modern technology companies compete fiercely for our attention, designing increasingly addictive platforms.
+- **Shallow Thinking**: Constant task-switching has trained our brains to resist deep focus.
+- **Spiritual Consequences**: Fragmented attention makes contemplative prayer, Scripture meditation, and God's still, small voice difficult to experience.
+
+Our challenge isn't merely behavioral but neurological—our brains have been rewired for distraction. Fortunately, they can be rewired again through intentional practice.
+
+## Ancient Disciplines for Modern Challenges
+
+### 1. Silence and Solitude
+
+**The Practice**: Intentionally withdrawing from noise, voices, and stimulation to be alone with God.
+
+**For Today's Context**: Start with just 5-10 minutes of complete digital silence (no devices nearby). Gradually increase duration as your attention muscles strengthen. Many find early morning, before engaging with any screens, most effective.
+
+**Biblical Basis**: Jesus frequently withdrew to solitary places for prayer (Luke 5:16). Elijah heard God not in noise but in silence (1 Kings 19:11-12).
+
+### 2. Lectio Divina (Divine Reading)
+
+**The Practice**: A slow, contemplative reading of Scripture involving four movements: read, meditate, pray, and contemplate.
+
+**For Today's Context**: Choose a short passage (5-10 verses). Read slowly several times. Meditate on a word or phrase that stands out. Respond in prayer. Simply rest in God's presence with the text. This counters our tendency to skim-read without absorption.
+
+**Biblical Basis**: "Oh how I love your law! It is my meditation all the day" (Psalm 119:97).
+
+### 3. Fixed-Hour Prayer
+
+**The Practice**: Pausing for prayer at set times throughout the day.
+
+**For Today's Context**: Set 2-3 daily alarms on your phone (the very device that often distracts can now remind). These brief prayer moments (even 1-2 minutes) interrupt the day's momentum and reorient attention toward God.
+
+**Biblical Basis**: "Evening, morning and noon I cry out in distress, and he hears my voice" (Psalm 55:17).
+
+### 4. Digital Sabbath
+
+**The Practice**: Regular, intentional abstention from technology.
+
+**For Today's Context**: Designate a 24-hour period weekly to disconnect from non-essential technology. Start smaller if necessary (a dinner without phones, a device-free Sunday morning). This practice helps break addictive usage patterns.
+
+**Biblical Basis**: While the Sabbath command (Exodus 20:8-11) doesn't explicitly mention technology, the principle of regular rest from normal activities applies.
+
+### 5. Fasting from Information
+
+**The Practice**: Voluntarily abstaining from news, social media, or other information sources.
+
+**For Today's Context**: Consider a one-day news fast, a week away from social media, or limiting information intake to specific times. This practice helps reveal information addictions and creates space for divine wisdom.
+
+**Biblical Basis**: "Be still, and know that I am God" (Psalm 46:10).
+
+### 6. Centering Prayer
+
+**The Practice**: A form of contemplative prayer using a sacred word to focus attention and consent to God's presence.
+
+**For Today's Context**: Choose a simple word (Jesus, Peace, Love) as an anchor. When distracted, gently return attention to the word. Start with 5-10 minutes, extending gradually. Apps like Centering Prayer can help with timing.
+
+**Biblical Basis**: "But when you pray, go into your room, close the door and pray to your Father, who is unseen" (Matthew 6:6).
+
+### 7. Rule of Life
+
+**The Practice**: Creating a simple, structured pattern for daily spiritual practices.
+
+**For Today's Context**: Develop a personalized framework outlining when you'll engage in prayer, Scripture, community, and other disciplines. The structure creates helpful boundaries in an unstructured digital environment.
+
+**Biblical Basis**: "But everything should be done in a fitting and orderly way" (1 Corinthians 14:40).
+
+## Starting Small: Practical Implementation
+
+The greatest barrier to spiritual disciplines is often perfectionism—believing we must implement elaborate practices immediately. Instead:
+
+1. **Begin with one discipline** that addresses your greatest area of distraction
+2. **Start small** (5 minutes of silence is better than planning 30 and failing)
+3. **Use physical reminders** (a physical Bible in a visible location, prayer beads, etc.)
+4. **Find accountability** with others practicing similar disciplines
+5. **Expect resistance** from both external sources and internal habits
+
+## The Counterintuitive Nature of Spiritual Attention
+
+The paradox of spiritual disciplines is that what initially feels like constraint ultimately creates freedom. By deliberately limiting certain inputs and activities, we create space for deeper attention to God's presence and voice.
+
+These practices aren't about earning God's favor but about positioning ourselves to receive what He freely gives. In a world engineered to capture and fragment our attention, reclaiming it through ancient spiritual disciplines becomes a revolutionary act—one that allows us to experience the depth of relationship with God for which we were created.
+
+As we faithfully practice these disciplines, even in small ways, we gradually develop an attentiveness to God that can withstand the distractions of our digital age.
+`
+    },
+    {
+      id: 9,
+      title: "Faith and Mental Health: A Christian Perspective",
+      excerpt: "How biblical wisdom and modern psychology can work together to support mental wellbeing while honoring spiritual truth.",
+      date: "2025-03-01T12:00:00Z",
+      readTime: "10 min read",
+      category: "Wellbeing",
+      slug: "faith-and-mental-health",
+      content: `
+# Faith and Mental Health: A Christian Perspective
+
+The relationship between faith and mental health has evolved significantly in recent decades. Where once many Christians viewed psychological struggles primarily through a spiritual lens, today there's growing recognition that mental health challenges involve complex interactions between biological, psychological, social, and spiritual factors.
+
+This article explores how Christians can approach mental health in a way that honors both biblical wisdom and scientific understanding, without sacrificing either.
+
+## Understanding the Historical Tension
+
+Historically, some tension has existed between faith communities and mental health professionals:
+
+- Some Christians feared that psychological approaches might undermine biblical truth or spiritual solutions
+- Some mental health professionals dismissed faith as irrelevant or even harmful to psychological wellbeing
+- Church responses to mental health struggles sometimes focused exclusively on spiritual factors
+
+Fortunately, this false dichotomy is breaking down as both fields recognize they're often addressing different dimensions of the same human experience.
+
+## A Holistic Biblical Anthropology
+
+Scripture presents humans as integrated beings with multiple interconnected dimensions:
+
+- **Physical**: Our material bodies, including brain chemistry and neurological systems
+- **Psychological**: Our thoughts, emotions, and behaviors
+- **Social**: Our relationships and community connections
+- **Spiritual**: Our relationship with God and eternal purpose
+
+Biblical passages recognize this complexity. For example, when Elijah experienced what appears similar to depression (1 Kings 19), God's response was multifaceted:
+- Physical: Rest and nourishment
+- Psychological: Gentle questioning and reframing
+- Social: Providing companionship (Elisha)
+- Spiritual: Revealing His presence and purpose
+
+This holistic understanding suggests that addressing only one dimension—whether exclusively spiritual or exclusively biological—may not fully address human needs.
+
+## When Faith Communities Get It Right
+
+At their best, churches can be powerful contributors to mental health:
+
+### 1. Providing Meaning and Purpose
+
+Research consistently shows that a sense of meaning correlates with better mental health outcomes. Faith offers a framework for understanding suffering and finding purpose even in difficulty.
+
+### 2. Offering Community Support
+
+Isolation exacerbates many mental health conditions. Churches provide natural community support networks that can be crucial for recovery.
+
+### 3. Promoting Healthy Practices
+
+Many spiritual disciplines (prayer, meditation on Scripture, sabbath rest, confession) align with evidence-based practices for psychological wellbeing.
+
+### 4. Countering Shame with Grace
+
+The Christian message that our worth isn't based on performance but on God's love helps counter the shame often associated with mental health struggles.
+
+## When Faith Communities Get It Wrong
+
+Unfortunately, churches sometimes respond harmfully to mental health challenges:
+
+### 1. Overspiritualizing Symptoms
+
+Attributing all psychological symptoms to spiritual causes can prevent people from seeking appropriate treatment. While some struggles may have spiritual dimensions, many also have biological and psychological components requiring professional intervention.
+
+### 2. Creating Stigma
+
+Judgmental attitudes or simplistic "just pray more" responses can intensify shame and discourage honesty about mental health struggles.
+
+### 3. Setting Unrealistic Expectations
+
+Promising immediate healing through faith alone can create disillusionment when symptoms persist despite sincere prayer.
+
+### 4. Neglecting Professional Resources
+
+Failing to connect people with qualified mental health professionals when needed is like refusing to refer someone to a cardiologist for heart issues.
+
+## A Better Integration: Both/And Approaches
+
+A balanced Christian approach to mental health embraces both spiritual and clinical resources:
+
+### 1. Recognize Different Domains of Care
+
+- Pastors and spiritual leaders: Equipped for spiritual guidance, theological perspective, and community support
+- Mental health professionals: Trained in evidence-based approaches to psychological assessment and treatment
+
+Both play vital roles that complement rather than compete with each other.
+
+### 2. Understand the Continuum of Care
+
+Mental health exists on a spectrum from wellness to illness, requiring different interventions:
+
+- Spiritual practices and community support may be sufficient for everyday emotional challenges
+- Clinical intervention becomes increasingly important as symptoms intensify or persist
+- The most severe conditions (like schizophrenia or bipolar disorder) typically require medical treatment as a primary intervention
+
+### 3. Adopt Collaborative Models
+
+Churches can develop relationships with Christian counselors or mentally healthy-friendly providers for referrals while providing spiritual support alongside clinical care.
+
+## Practical Steps for Churches
+
+Faith communities can foster mental health through several practical approaches:
+
+1. **Educate leadership** on recognizing mental health issues and making appropriate referrals
+2. **Preach about mental health** to reduce stigma and correct theological misunderstandings
+3. **Create support groups** for those experiencing mental health challenges and their families
+4. **Develop referral networks** with qualified, faith-respectful mental health professionals
+5. **Model vulnerability** through appropriate sharing by church leaders
+
+## Practical Steps for Individuals
+
+For Christians experiencing mental health challenges:
+
+1. **Recognize that seeking help demonstrates wisdom**, not weakness
+2. **Continue spiritual practices** while also pursuing appropriate treatment
+3. **Find a mental health professional** who respects your faith (even if they don't share it)
+4. **Share with trusted believers** who can provide support without judgment
+5. **Remember that treatment journeys take time** and rarely follow straight lines
+
+## Conclusion
+
+Faith and mental health care are not opposing forces but complementary resources for human flourishing. By embracing both biblical wisdom and evidence-based approaches to psychological wellbeing, Christians can experience more complete care addressing all dimensions of their humanity.
+
+When properly integrated, faith can enhance mental health treatment by providing meaning, community, and spiritual resources. Simultaneously, mental health treatment can enable people to engage more fully with their faith by addressing biological and psychological barriers to spiritual growth.
+
+The goal isn't choosing between faith and psychology but allowing each to inform and strengthen the other as we pursue wholeness in all dimensions of our lives.
 `
     }
   ];
