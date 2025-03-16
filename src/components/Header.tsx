@@ -45,11 +45,12 @@ export const Header = () => {
           {isBlogRoute && (
             <Button 
               asChild
-              className="bg-[#ffc352] hover:bg-[#ffc352]/90 text-primary-foreground"
+              size="sm"
+              className="bg-[#ffc352] hover:bg-[#ffc352]/90 text-primary-foreground h-8 px-3 py-1 text-xs"
             >
               <a href="https://landing.askpriestai.com" target="_blank" rel="noopener noreferrer">
                 Try AskPriestAI
-                <ExternalLink className="ml-1 h-4 w-4" />
+                <ExternalLink className="ml-1 h-3 w-3" />
               </a>
             </Button>
           )}
