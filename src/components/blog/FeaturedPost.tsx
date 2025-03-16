@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ChevronRight } from "lucide-react";
@@ -36,7 +37,7 @@ export const FeaturedPost: React.FC<FeaturedPostProps> = ({ post }) => {
           </div>
           <Button 
             onClick={() => navigate(`/blog/${post.slug}`)}
-            className="bg-primary-gold-dark hover:bg-primary-gold-dark/90"
+            className="bg-[#ffc352] hover:bg-[#ffc352]/90"
           >
             Read Article
             <ChevronRight className="h-4 w-4 ml-1" />
