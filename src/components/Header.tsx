@@ -1,10 +1,13 @@
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const isBlogRoute = location.pathname.startsWith('/blog');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +41,18 @@ export const Header = () => {
               Blog
             </Link>
           </nav>
+          
+          {isBlogRoute && (
+            <Button 
+              asChild
+              className="bg-[#ffc352] hover:bg-[#ffc352]/90 text-primary-foreground"
+            >
+              <a href="https://landing.askpriestai.com" target="_blank" rel="noopener noreferrer">
+                Try AskPriestAI
+                <ExternalLink className="ml-1 h-4 w-4" />
+              </a>
+            </Button>
+          )}
         </div>
       </div>
     </header>
