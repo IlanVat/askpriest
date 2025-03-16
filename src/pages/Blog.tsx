@@ -5,7 +5,6 @@ import { blogPosts } from "@/data/blog";
 import { BlogHeader } from "@/components/blog/BlogHeader";
 import { FeaturedPost } from "@/components/blog/FeaturedPost";
 import { BlogPostGrid } from "@/components/blog/BlogPostGrid";
-import { NewsletterSection } from "@/components/blog/NewsletterSection";
 import { CallToAction } from "@/components/blog/CallToAction";
 import { BlogSEO } from "@/components/blog/BlogSEO";
 
@@ -51,9 +50,6 @@ const Blog = () => {
           setSearchTerm={setSearchTerm}
           setCategory={setCategory}
         />
-        
-        {/* Newsletter Section */}
-        <NewsletterSection />
         
         {/* Call to Action */}
         <CallToAction />
