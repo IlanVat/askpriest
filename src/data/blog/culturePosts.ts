@@ -26,12 +26,12 @@ export const culturePosts: BlogPost[] = [
   {
     id: 17,
     title: "Is AI the Mark of the Beast? Biblical Prophecy in the Digital Age",
-    excerpt: "Exploring the unsettling parallels between Revelation's warnings and our increasing dependence on artificial intelligence. Are we sleepwalking into prophecy?",
+    excerpt: "Exploring the incredible potential of artificial intelligence through a biblical lens. Discover how technologies like AskPriestAI can support rather than threaten your spiritual journey.",
     date: "2025-04-05",
     readTime: "14 min read",
-    category: "Prophecy",
+    category: "Technology",
     slug: "ai-mark-of-beast-biblical-prophecy",
-    keywords: "mark of the beast, AI danger, revelation prophecy, end times technology, antichrist system"
+    keywords: "ai benefits, christian technology, biblical perspective on ai, digital discipleship, askpriestai"
   },
   {
     id: 15,
