@@ -11,7 +11,7 @@ export const culturePosts: BlogPost[] = [
     readTime: "8 min read",
     category: "Culture",
     slug: "disturbing-truth-christian-entertainment",
-    keywords: "christian media, faith entertainment, media discernment, biblical worldview, christian movies"
+    keywords: "christian media, faith entertainment, media discernment, biblical worldview, christian movies, spiritual guidance"
   },
   {
     id: 6,
@@ -41,6 +41,6 @@ export const culturePosts: BlogPost[] = [
     readTime: "9 min read",
     category: "Parenting",
     slug: "children-spiritually-formed-tiktok-not-scripture",
-    keywords: "christian parenting, social media dangers, tiktok influence, digital discipleship, protecting children"
+    keywords: "christian parenting, social media dangers, tiktok influence, digital discipleship, protecting children, spiritual guidance"
   }
 ];

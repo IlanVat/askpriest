@@ -99,10 +99,52 @@ const BlogPost: React.FC = () => {
       content += defaultContentStructure(post, keywords);
     }
     
+    // Add AskPriestAI pitch if the post discusses problems
+    if (isProblemPost(post)) {
+      content += generateAskPriestAIPitch(post, keywords);
+    }
+    
     // Add conclusion
     content += `## Conclusion\n\nThe teachings of Christ on ${keywords[0]} continue to challenge and transform us today. As believers, we're called to embrace these truths not just intellectually, but in our daily actions. Remember that ${post.title.toLowerCase()} isn't just theological theory—it's an invitation to a radically different way of living that reflects God's kingdom in our world.\n\nThank you for reading this exploration of ${post.title.toLowerCase()}. May it inspire you to dig deeper into Scripture and apply these principles in your own walk of faith.`;
     
     return content;
+  };
+  
+  // Determine if a post is focused on a problem or challenge
+  const isProblemPost = (post: typeof blogPosts[0]) => {
+    // Check title and excerpt for problem-related keywords
+    const problemKeywords = [
+      'problem', 'challenge', 'struggle', 'crisis', 'danger', 'threat', 'risk', 
+      'concern', 'issue', 'trouble', 'difficult', 'warning', 'alarm', 'fear', 
+      'worry', 'anxiety', 'confusion', 'error', 'misconception', 'misunderstanding',
+      'disturbing', 'alarming', 'failing', 'declining'
+    ];
+    
+    const contentText = (post.title + ' ' + post.excerpt).toLowerCase();
+    
+    return problemKeywords.some(keyword => contentText.includes(keyword)) ||
+           post.slug.includes('disturbing-truth') ||
+           post.slug.includes('children-spiritually-formed-tiktok');
+  };
+  
+  // Generate a custom AskPriestAI pitch based on the post's problem area
+  const generateAskPriestAIPitch = (post: typeof blogPosts[0], keywords: string[]) => {
+    const category = post.category.toLowerCase();
+    let pitchTitle = "## How AskPriestAI Can Help\n\n";
+    let pitchContent = "";
+    
+    if (category === 'culture' || category === 'technology' || post.keywords.includes('social media')) {
+      pitchContent = `In a world where digital media often presents confusing or contradictory spiritual messages, AskPriestAI provides clarity through biblically-grounded guidance. Unlike algorithm-driven social platforms that may lead you astray, AskPriestAI offers trustworthy answers rooted in Scripture and traditional Christian teaching.\n\n**AskPriestAI helps you:**\n\n- Get immediate, Scripture-based answers to your questions about faith and modern challenges\n- Navigate complex cultural issues with biblical wisdom\n- Discern truth from misleading messages in today's media landscape\n- Build a stronger foundation for your family's spiritual formation\n\nWhen you need guidance on ${keywords[0]} or any spiritual matter, AskPriestAI is available 24/7 to provide biblical perspective and practical wisdom.\n\n`;
+    } else if (category === 'parenting') {
+      pitchContent = `Raising children with strong faith in today's challenging environment requires consistent, biblically-sound guidance. AskPriestAI gives parents a trusted resource for addressing difficult questions and nurturing your children's spiritual development.\n\n**AskPriestAI supports Christian parents by:**\n\n- Providing biblical answers to tough questions your children may ask\n- Offering guidance on age-appropriate spiritual formation\n- Suggesting Scripture passages and devotional resources for family discipleship\n- Helping you address challenging cultural influences from a biblical perspective\n\nParenting doesn't come with a manual, but with AskPriestAI, you have biblical wisdom at your fingertips whenever you need it.\n\n`;
+    } else if (category === 'theology' || category === 'doctrine') {
+      pitchContent = `Wrestling with complex theological questions about ${keywords[0]} can be challenging, especially when encountering conflicting interpretations. AskPriestAI provides clear, biblically-grounded explanations to help you navigate these deep waters with confidence.\n\n**AskPriestAI offers:**\n\n- Balanced theological perspectives rooted in Scripture and Christian tradition\n- Clear explanations of complex doctrinal concepts\n- Biblical references to support theological insights\n- Guidance for discerning truth in an era of theological confusion\n\nRather than piecing together answers from uncertain sources, turn to AskPriestAI for theologically sound guidance on your spiritual journey.\n\n`;
+    } else {
+      // Default pitch for any other problem-focused post
+      pitchContent = `Navigating challenges related to ${keywords[0]} requires biblical wisdom and spiritual discernment. AskPriestAI provides immediate, Scripture-based guidance to help you address these difficulties from a faith perspective.\n\n**AskPriestAI helps believers:**\n\n- Find biblical answers to pressing questions about ${keywords[0]}\n- Discover relevant Scripture passages for spiritual guidance\n- Access wisdom from Christian tradition to address modern challenges\n- Receive practical steps for applying faith to real-life situations\n\nWhenever you face questions or challenges in your spiritual journey, AskPriestAI offers biblically-grounded insights to strengthen your faith and guide your path.\n\n`;
+    }
+    
+    return pitchTitle + pitchContent;
   };
   
   // Generate positive content specifically for AI-related posts
