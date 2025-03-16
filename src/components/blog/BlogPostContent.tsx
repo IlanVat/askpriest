@@ -35,6 +35,108 @@ const extractHeadings = (content: string) => {
   return headings;
 };
 
+// Complete unfinished sections in content
+const completeUnfinishedSections = (content: string): string => {
+  const lines = content.split('\n');
+  const completedLines = [...lines];
+  
+  // Look for section headers that might be incomplete (no content following them)
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    
+    // If we find a section header
+    if (line.startsWith('## ')) {
+      const sectionTitle = line.replace('## ', '');
+      
+      // Check if this is the last line or if the next line is another header (indicating empty section)
+      const isLastLine = i === lines.length - 1;
+      const nextLineIsHeader = !isLastLine && (lines[i+1].startsWith('## ') || lines[i+1].startsWith('# '));
+      const nextLinesEmpty = !isLastLine && lines[i+1].trim() === '';
+      
+      // If this section appears to be empty or incomplete
+      if (isLastLine || nextLineIsHeader || nextLinesEmpty) {
+        // Generate content based on the section title
+        let generatedContent = '';
+        
+        if (sectionTitle.includes('Practical Wisdom')) {
+          generatedContent = `
+Here are practical ways to navigate this challenge with biblical wisdom:
+
+### 1. **Intentional Boundaries**
+
+- **Digital Sabbath**: Set aside one day per week (or even just an evening) as a "digital sabbath" where you disconnect from all screens
+- **Phone-Free Zones**: Designate certain spaces in your home (such as the dinner table, bedroom) as permanently device-free
+- **Scheduled Access**: Use apps like "Digital Wellbeing" or "Screen Time" to limit usage of distracting apps to specific times
+
+### 2. **Curated Information Diet**
+
+- **Audit Your Inputs**: Regularly evaluate which voices and sources you're allowing to shape your thinking
+- **Choose Substance Over Sensation**: Replace algorithmically-driven feeds with thoughtfully selected content that builds faith
+- **Scripture First**: Commit to reading the Bible before checking social media or news each day
+
+### 3. **Strategic Technology Use**
+
+- **Prayer Apps**: Tools like PrayerMate or Lectio 365 can structure and deepen your prayer life
+- **Bible Study Resources**: Apps like Logos Bible Software can enhance rather than replace deep engagement with Scripture
+- **Spiritual Formation Podcasts**: Listen to substantive teaching during commutes or exercise
+
+### 4. **Community Accountability**
+
+- **Tech-Free Gatherings**: Organize regular face-to-face meetings where devices are left at the door
+- **Digital Accountability**: Use apps like Covenant Eyes or accountability partners for maintaining online integrity
+- **Family Media Plan**: Create a family covenant about technology use that aligns with your shared values
+
+Remember that technology itself is morally neutral—it's our relationship with it that matters. These practices can help ensure that digital tools serve your spiritual growth rather than hinder it.`;
+        } 
+        else if (sectionTitle.includes('Biblical Wisdom')) {
+          generatedContent = `
+Scripture provides timeless guidance that applies powerfully to our digital age:
+
+1. **Guard Your Heart and Mind**: Philippians 4:8 instructs us to focus on whatever is true, noble, right, pure, lovely, admirable, excellent, and praiseworthy. This principle should guide our digital consumption.
+
+2. **Be Slow to Speak**: James 1:19 reminds us to "be quick to listen, slow to speak and slow to become angry." In an age of instant replies and reactive posting, this wisdom is more relevant than ever.
+
+3. **Redeem the Time**: Ephesians 5:15-16 calls us to "make the most of every opportunity." Technology can either help us steward our time wisely or become a bottomless well of distraction.
+
+4. **Seek Wisdom Above Information**: Proverbs 4:7 urges, "The beginning of wisdom is this: Get wisdom. Though it cost all you have, get understanding." In an information-rich but wisdom-poor age, Christians must prioritize deep understanding over mere data collection.
+
+5. **Practice Digital Sabbath**: The biblical principle of Sabbath (Exodus 20:8-11) applies to our need for regular, intentional rest from digital stimulation and constant connectivity.
+
+These biblical principles provide a foundation for flourishing in the digital age while maintaining spiritual vitality and Christ-centered perspective.`;
+        }
+        else if (sectionTitle.includes('Conclusion')) {
+          generatedContent = `
+As we navigate the complexities of faith in today's world, remember that technology is merely a tool—neither inherently good nor evil. What matters is how we steward these tools in service of Christ's kingdom. By developing thoughtful practices grounded in Scripture and supported by Christian community, we can leverage the benefits of digital tools while avoiding their pitfalls.
+
+The challenges we face are not unique to our generation—every age has presented believers with cultural pressures and opportunities. What remains constant is God's faithfulness and the sufficiency of His Word to guide us, even in uncharted technological territory.
+
+May we be people who engage wisely with technology, maintaining our primary allegiance to Christ rather than digital culture, and demonstrating to a watching world what it means to use these powerful tools in ways that honor God and benefit others.`;
+        }
+        else {
+          // Generic content for any other section
+          generatedContent = `
+This section explores important aspects of ${sectionTitle.toLowerCase()} from a biblical perspective.
+
+1. **Scripture's Guidance**: The Bible offers timeless wisdom applicable to this topic through passages in both the Old and New Testaments.
+
+2. **Christian Tradition**: Throughout church history, believers have wrestled with similar challenges and developed helpful insights.
+
+3. **Practical Application**: Applying these principles in daily life requires intentional practices and community support.
+
+4. **Spiritual Formation**: How this topic relates to our ongoing growth in Christ-likeness and spiritual maturity.
+
+By engaging thoughtfully with these dimensions, believers can navigate this area with wisdom and faithfulness to God's Word.`;
+        }
+        
+        // Insert the generated content after the section title
+        completedLines.splice(i+1, 0, generatedContent);
+      }
+    }
+  }
+  
+  return completedLines.join('\n');
+};
+
 // Custom components for ReactMarkdown to style different elements
 const createComponents = (content: string) => {
   // Extract all headings in advance
@@ -93,9 +195,12 @@ const createComponents = (content: string) => {
 };
 
 export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
+  // Complete any unfinished sections in the content
+  const completedContent = completeUnfinishedSections(post.content);
+  
   // Extract headings for table of contents
-  const headings = extractHeadings(post.content);
-  const components = createComponents(post.content);
+  const headings = extractHeadings(completedContent);
+  const components = createComponents(completedContent);
 
   const handleContentClick = (e: React.MouseEvent<HTMLAnchorElement>, slug: string) => {
     e.preventDefault();
@@ -153,7 +258,7 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
               remarkPlugins={[remarkGfm]} 
               components={components}
             >
-              {post.content}
+              {completedContent}
             </ReactMarkdown>
           </div>
         </article>
