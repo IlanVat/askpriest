@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +49,6 @@ export const Header = () => {
             >
               <a href="https://landing.askpriestai.com" target="_blank" rel="noopener noreferrer">
                 Try AskPriestAI
-                <ExternalLink className="ml-1 h-3 w-3" />
               </a>
             </Button>
           )}
@@ -59,3 +57,4 @@ export const Header = () => {
     </header>
   );
 };
+
