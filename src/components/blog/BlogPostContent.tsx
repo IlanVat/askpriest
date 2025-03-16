@@ -17,8 +17,8 @@ interface BlogPostContentProps {
 }
 
 export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
-  // Complete specific unfinished sections in the content
-  const completedContent = completeUnfinishedSections(post.content);
+  // Complete specific unfinished sections in the content, passing the post title
+  const completedContent = completeUnfinishedSections(post.content, post.title);
   
   // Extract headings for table of contents
   const headings = extractHeadings(completedContent);
