@@ -16,7 +16,7 @@ export const CallToAction: React.FC = () => {
           </p>
           <Button 
             size="lg"
-            className="bg-primary-gold-dark hover:bg-primary-gold-dark/90"
+            className="bg-[#ffc352] hover:bg-[#ffc352]/90 text-primary-foreground"
             onClick={() => window.location.href = 'https://landing.askpriestai.com'}
           >
             Ask Your Question Now
