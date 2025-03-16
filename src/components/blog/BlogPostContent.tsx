@@ -44,7 +44,7 @@ const createComponents = (content: string) => {
     h1: ({ node, ...props }: any) => {
       const slug = createSlug(props.children.toString());
       return (
-        <h1 id={slug} className="text-3xl font-bold mt-8 mb-4 text-primary-gold-dark font-serif scroll-mt-24" {...props}>
+        <h1 id={slug} className="text-3xl font-bold mt-8 mb-4 text-black font-serif scroll-mt-24" {...props}>
           {props.children}
         </h1>
       );
@@ -52,7 +52,7 @@ const createComponents = (content: string) => {
     h2: ({ node, ...props }: any) => {
       const slug = createSlug(props.children.toString());
       return (
-        <h2 id={slug} className="text-2xl font-bold mt-6 mb-3 text-primary-gold-dark font-serif scroll-mt-24" {...props}>
+        <h2 id={slug} className="text-2xl font-bold mt-6 mb-3 text-black font-serif scroll-mt-24" {...props}>
           {props.children}
         </h2>
       );
@@ -60,7 +60,7 @@ const createComponents = (content: string) => {
     h3: ({ node, ...props }: any) => {
       const slug = createSlug(props.children.toString());
       return (
-        <h3 id={slug} className="text-xl font-bold mt-4 mb-2 text-primary-gold-dark font-serif scroll-mt-24" {...props}>
+        <h3 id={slug} className="text-xl font-bold mt-4 mb-2 text-black font-serif scroll-mt-24" {...props}>
           {props.children}
         </h3>
       );
@@ -119,7 +119,7 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
         </div>
         
         <article className="prose prose-lg max-w-none">
-          <h1 className="text-4xl font-bold mb-3 font-serif text-primary-gold-dark">{post.title}</h1>
+          <h1 className="text-4xl font-bold mb-3 font-serif text-black">{post.title}</h1>
           <p className="text-gray-600 mb-8 pb-4 border-b border-gray-200">
             Published on: {new Date(post.date).toLocaleDateString('en-US', { 
               year: 'numeric', 
@@ -131,7 +131,7 @@ export const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
           <div className="bg-primary-gold-light/10 border border-primary-gold/30 p-6 rounded-lg mb-8 shadow-sm">
             <div className="flex items-center mb-2">
               <ListOrdered className="text-primary-gold-dark mr-2" size={20} />
-              <h3 className="text-lg font-semibold text-primary-gold-dark">Contents</h3>
+              <h3 className="text-lg font-semibold text-black">Contents</h3>
             </div>
             <div className="pl-6">
               {headings.map((heading, index) => (
