@@ -47,9 +47,9 @@ export const Header = () => {
               size="sm"
               className="bg-[#ffc352] hover:bg-[#ffc352]/90 text-primary-foreground h-8 px-3 py-1 text-xs"
             >
-              <a href="https://landing.askpriestai.com" target="_blank" rel="noopener noreferrer">
+              <Link to="/">
                 Try AskPriestAI
-              </a>
+              </Link>
             </Button>
           )}
         </div>
