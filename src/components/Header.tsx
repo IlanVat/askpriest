@@ -31,9 +31,9 @@ export const Header = () => {
             </Link>
             <Link 
               to="/blog" 
-              className={`text-sm ${
+              className={`text-sm relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[2px] after:bg-primary-gold-dark after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 ${
                 location.pathname.startsWith('/blog') 
-                  ? 'text-primary-gold-dark font-medium' 
+                  ? 'text-primary-gold-dark font-medium after:scale-x-100' 
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -57,4 +57,3 @@ export const Header = () => {
     </header>
   );
 };
-
