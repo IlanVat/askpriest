@@ -8,6 +8,7 @@ import { BlogPostNotFound } from "@/components/blog/BlogPostNotFound";
 import { BlogPostContent } from "@/components/blog/BlogPostContent";
 import { BlogSEO } from "@/components/blog/BlogSEO";
 import { getMockPosts } from "@/utils/blogPostUtils";
+import { blogPosts } from "@/data/blogPosts";
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -35,17 +36,31 @@ const BlogPost: React.FC = () => {
       } catch (e: any) {
         // If real API fails, use local mock data as fallback
         console.log("Falling back to local data");
-        const mockPosts = getMockPosts();
-        const mockPost = mockPosts.find(p => p.slug === slug);
         
-        if (mockPost) {
+        // First check in our static blog posts
+        const staticPost = blogPosts.find(p => p.slug === slug);
+        if (staticPost) {
+          // For static posts, generate mock content based on the post info
+          const mockContent = generateMockContent(staticPost);
           setPost({
-            title: mockPost.title,
-            date: mockPost.date,
-            content: mockPost.content
+            title: staticPost.title,
+            date: staticPost.date,
+            content: mockContent
           });
         } else {
-          setError(`Failed to load post: ${e.message}`);
+          // If not in static posts, try the mock posts
+          const mockPosts = getMockPosts();
+          const mockPost = mockPosts.find(p => p.slug === slug);
+          
+          if (mockPost) {
+            setPost({
+              title: mockPost.title,
+              date: mockPost.date,
+              content: mockPost.content
+            });
+          } else {
+            setError(`Post not found`);
+          }
         }
       } finally {
         setLoading(false);
@@ -54,6 +69,35 @@ const BlogPost: React.FC = () => {
 
     fetchPost();
   }, [slug]);
+
+  // Generate mock content for static blog posts
+  const generateMockContent = (post: typeof blogPosts[0]) => {
+    return `
+## Introduction
+
+${post.excerpt}
+
+## Main Points
+
+This is a sample article about ${post.title.toLowerCase()}. The keywords for this article include ${post.keywords}.
+
+## Christian Perspective
+
+From a Christian perspective, this topic relates to several important theological concepts.
+
+## Scripture References
+
+The Bible provides guidance on this topic in several passages.
+
+## Practical Application
+
+Here are some ways to apply these principles in your daily life.
+
+## Conclusion
+
+Thank you for reading this article about ${post.title.toLowerCase()}.
+    `;
+  };
 
   // SEO metadata setup
   let seoTitle = "Blog Post | AskPriestAI";
