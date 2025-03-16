@@ -1,8 +1,6 @@
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,15 +38,6 @@ export const Header = () => {
               Blog
             </Link>
           </nav>
-          
-          <Button 
-            size="sm"
-            onClick={() => window.location.href = 'https://www.askpriestai.com/login_signup?screen=Signup'}
-            className="bg-primary-gold-dark hover:bg-primary-gold-dark/90"
-          >
-            Get Started
-            <ChevronRight className="ml-1 h-4 w-4" />
-          </Button>
         </div>
       </div>
     </header>
